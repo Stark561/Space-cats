@@ -1,0 +1,58 @@
+@import url(../css/base.css);
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 335px;
+  height: 270px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  cursor: context-menu;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* bottom: 0;
+  right: 0; */
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 800ms ease-in-out;
+}
+.card .front {
+  background-color: var(--orange);
+}
+.card .front .img {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.card .back {
+  background-color: var(--white);
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card .contents {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(100px) scale(0.85);
+}
+.card .contents .title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: calc(18 / 14);
+  text-transform: uppercase;
+}
