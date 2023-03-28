@@ -8,6 +8,9 @@
     --dark-background: #1E1823;
     --main-font: Montserrat, sans-serif;
     --secondary-font: Roboto, sans-serif;
+    --items: 1;
+    --col-indent: 18px;
+    --row-indent: 20px;
   }
 
 
@@ -23,6 +26,18 @@
 
   a{
     text-decoration: none;
+  }
+
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--row-indent);
+    column-gap: var(--col-indent);
+  }
+  .card-set-item {
+    flex-basis: calc(
+      (100% - var(--col-indent) * (var(--items) - 1)) / var(--items)
+    );
   }
 
   textarea{
