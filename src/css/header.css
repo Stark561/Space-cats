@@ -1,4 +1,4 @@
-.header {
+/* .header {
   padding: 20px 0;
 }
 
@@ -18,4 +18,63 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
+} */
+.container-row {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22em;
+  letter-spacing: -0.03em;
+  color: #111111;
+  margin-right: 188px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-left: 137px;
+}
+
+.social-link {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.svg-chocolate {
+  fill: white;
+  stroke: #FD9222;
+}
+
+.svg-social {
+  fill: white;
+  stroke: black;
 }
