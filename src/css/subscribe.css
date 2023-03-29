@@ -1,4 +1,5 @@
 .subscribe-section {
+    position: relative;
     margin: 0 auto;
     padding-bottom: 63px;
     padding-top: 62px;
@@ -102,3 +103,48 @@
     line-height: calc(18/22);
   }
 }
+
+/* Modal subscribe */
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-subscribe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  background-color: var(--cloud-backgraund);
+  max-width: 538px;
+  width: 100%;
+}
+
+.title-modal-sub {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.modal-img-sub {
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-btn-subscribe {
+  position: absolute;
+  top: 31px;
+  right: 31px;
+  background-color: transparent;
+
+} 
+
+.modal-btn-close-subscribe {
+  stroke: var(--white);
+}
+
+
+
