@@ -53,6 +53,13 @@
   color: var(--white);
   align-self: start;
 }
+
+.sellers-button:hover,
+.sellers-button:focus {
+  background-color: #fcf1e0;
+  color: var(--orange);
+}
+
 body {
   background-color: var(--white);
 }
