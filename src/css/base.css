@@ -13,8 +13,6 @@
   --hero-bg-btn-hover: #FCF1E0;
 }
 
-/* Добавить .visually-hidden */
-
 h1,
 h2,
 h3,
@@ -35,21 +33,6 @@ a {
   row-gap: var(--row-indent);
   column-gap: var(--col-indent);
 }
-
-=======--black: #111111;
---deep-purple: #1e1823;
---orange: #fd9222;
---white: #FFFFFF;
---cloud-backgraund: #FAFAFA;
---dark-background: #1E1823;
---main-font: Montserrat,
-sans-serif;
---secondary-font: Roboto,
-sans-serif;
---items: 1;
---col-indent: 18px;
---row-indent: 20px;
-
 
 h1,
 h2,
