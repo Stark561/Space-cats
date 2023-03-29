@@ -1,12 +1,3 @@
-.our-products-section {
-  background-color: var(--cloud-backgraund);
-}
-.our-products-container {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
-}
 .our-products-title {
   margin-bottom: 32px;
   text-align: center;
@@ -25,6 +16,14 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
+
+@media screen and (min-width: 768px){
+  .swiper-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 270px;
+  }
+}
 .our-products-subtitle {
   margin-top: 8px;
   margin-bottom: 2px;
@@ -34,8 +33,6 @@
 }
 .our-products-desc {
   font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.18;
   color: rgba(17, 17, 17, 0.7);
