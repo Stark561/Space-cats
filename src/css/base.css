@@ -4,13 +4,14 @@
   --deep-purple: #1e1823;
   --orange: #fd9222;
   --white: #fafafa;
-  --cloud-backgraund: #E2E2E2;
+  --cloud-background: #E2E2E2;
   --dark-background: #1E1823;
   --main-font: Montserrat, sans-serif;
   --secondary-font: Roboto, sans-serif;
   --items: 1;
   --col-indent: 18px;
   --row-indent: 20px;
+
   --hero-bg-btn-hover: #FCF1E0;
 }
 
@@ -77,7 +78,7 @@ body {
   line-height: calc(18/14);
   letter-spacing: -0.02em;
   font-family: var(--main-font);
-  background-color: var(--cloud-backgraund);
+  background-color: var(--cloud-background);
   color: var(--black);
 }
 
@@ -85,6 +86,10 @@ body {
   font-weight: 600;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+
+.title-orange-color {
+  color: var(--orange);
 }
 
 .container {
