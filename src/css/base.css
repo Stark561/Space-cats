@@ -3,8 +3,8 @@
     --black: #111111;
     --deep-purple: #1e1823;
     --orange: #fd9222;
-    --white: #fafafa;
-    --cloud-backgraund: #E2E2E2;
+    --white: #FFFFFF;
+    --cloud-backgraund: #FAFAFA;
     --dark-background: #1E1823;
     --main-font: Montserrat, sans-serif;
     --secondary-font: Roboto, sans-serif;
@@ -12,8 +12,6 @@
     --col-indent: 18px;
     --row-indent: 20px;
   }
-
-/* Добавить .visually-hidden */
 
   h1,
   h2,
@@ -28,7 +26,18 @@
   a{
     text-decoration: none;
   }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
   .card-set {
     display: flex;
     flex-wrap: wrap;
