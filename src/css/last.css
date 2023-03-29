@@ -1,0 +1,131 @@
+.section-footer {
+    background-color: var(--dark-background);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.footer-title {
+    margin-bottom: 32px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: -0.02em;
+    max-width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 28px;
+    line-height: calc(34/28);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.title-orange {
+    color: var(--orange);
+}
+
+.footer-contacts {
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-contacts {
+    width: 280px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer-contacts {
+        width: 293px;
+        margin-bottom: 58px;
+    }
+}
+
+.footer-social-list {
+    display: flex;
+}
+
+.footer-social-item {
+    margin-right: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-social-item {
+    margin-right: 18px;
+  }
+}
+
+.footer-contact-title {
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.footer-contact-link {
+    color: #FFFFFF;
+}
+
+.footer-contact-link:nth-child(2) {
+    margin-bottom: 4px;
+}
+
+.footer-social-icon {
+    stroke: var(--white);
+}
+
+.line {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .line {
+    margin-bottom: 24px;
+  }
+}
+
+.footer-move-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-move-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.footer-move-link {
+    font-weight: 500;
+    line-height: calc(16/14);
+    color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-upline-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,4 +1,4 @@
-.container-row {
+.header-container-row {
   display: flex;
 }
 
@@ -20,6 +20,12 @@
   padding-bottom: 32px;
 }
 
+@media screen and (max-width:768px) {
+  .header-logo {
+    margin: 0;
+  }
+}
+
 .header-text {
   display: flex;
   align-items: center;
@@ -28,6 +34,16 @@
   letter-spacing: -0.02em;
   padding-top: 24px;
   padding-bottom: 32px;
+}
+
+@media screen and (max-width:768px) {
+  .header-text {
+    display: none;
+  }
+
+  .header-social-link {
+    display: none;
+  }
 }
 
 .header-links {
