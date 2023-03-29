@@ -12,7 +12,7 @@
   display: flex;
   width: 100%;
   max-width: 335px;
-  height: 270px;
+  min-height: 270px;
   /*  set 3d properties  */
   transform-style: preserve-3d;
   perspective: 800px;
