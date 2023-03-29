@@ -4,16 +4,8 @@
   | default @import url()
   |============================
 */
-<<<<<<< HEAD
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-@import url('./base.css');
-@import url('./topSellers.css');
-=======
 /* @import url('./reset.css');
 @import url('./vite-promo.css'); */
-
 
 @import url('./base.css');
 @import url('./header.css');
@@ -26,4 +18,3 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./last.css');
->>>>>>> bdf1e14963cc6d036a57d328a37976611e341ab5
