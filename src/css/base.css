@@ -1,6 +1,5 @@
 :root {
-
-  --black: #111111;
+  <<<<<<< HEAD --black: #111111;
   --deep-purple: #1e1823;
   --orange: #fd9222;
   --white: #fafafa;
@@ -37,7 +36,60 @@ a {
   column-gap: var(--col-indent);
 }
 
+=======--black: #111111;
+--deep-purple: #1e1823;
+--orange: #fd9222;
+--white: #FFFFFF;
+--cloud-backgraund: #FAFAFA;
+--dark-background: #1E1823;
+--main-font: Montserrat,
+sans-serif;
+--secondary-font: Roboto,
+sans-serif;
+--items: 1;
+--col-indent: 18px;
+--row-indent: 20px;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--row-indent);
+  column-gap: var(--col-indent);
+}
+
 .card-set-item {
+  flex-basis: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
+}
+
+>>>>>>>main .card-set-item {
   flex-basis: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
 }
 
@@ -127,19 +179,4 @@ body {
   .section {
     padding-bottom: 128px;
   }
-}
-
-
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
