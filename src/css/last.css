@@ -11,10 +11,6 @@
   }
 }
 
-.container {
-    outline: 1px solid red;
-}
-
 .footer-title {
     margin-bottom: 32px;
     color: var(--white);
