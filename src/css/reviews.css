@@ -1,0 +1,168 @@
+
+
+
+.reviews-title {
+    margin-bottom: 74px;
+    text-align: center;
+    
+}
+
+.reviews-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 335px;
+    padding-top: 42px;
+
+    position: relative;
+}
+@media screen and (min-width: 768px){
+    .reviews-item {
+      max-width: 344px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .reviews-item {
+      max-width: 360px;
+    }
+}
+
+.reviews-photo {
+    position: absolute;
+    top: 42px;
+    left: 50;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.item-wrap {
+    padding: 56px 18px 42px 18px;
+    background-color: var(--white);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.reviews-subtitle {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(24 \ 18);
+}
+
+.reviews-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 \ 14);
+}
+
+
+.swiper-pagination {
+    position: static;
+    padding-top: 20px;
+  }
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--orange);
+    width: 28px;
+    border-radius: 7px;
+  }
+
+  /* const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 18,
+    loop: true,
+    slidesToScroll: 1,
+    speed: 800,
+    slideToClickedSlide: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  }); */
+
+/* .our-products-title {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .title-orange-color {
+    color: var(--orange);
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+    max-width: 335px;
+    padding: 32px 52px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+  }
+  
+  @media screen and (min-width: 768px){
+    .swiper-slide {
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 270px;
+    }
+  }
+  .our-products-subtitle {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-transform: uppercase;
+  }
+  .our-products-desc {
+    font-family: var(--main-font);
+    font-size: 12px;
+    line-height: 1.18;
+    color: rgba(17, 17, 17, 0.7);
+  }
+  .our-products-span {
+    margin-top: 18px;
+    padding: 8px 20px;
+    background: var(--cloud-backgraund);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    font-weight: 600;
+    line-height: 1.21;
+  }
+  .swiper-pagination {
+    position: static;
+    padding-top: 20px;
+  }
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--orange);
+    width: 28px;
+    border-radius: 7px;
+  }
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 18,
+    loop: true,
+    slidesToScroll: 1,
+    speed: 800,
+    slideToClickedSlide: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  }); */
