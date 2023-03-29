@@ -3,7 +3,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 18,
   loop: true,
   slidesToScroll: 1,
-  speed: 800,
+  speed: 2000,
   slideToClickedSlide: true,
   pagination: {
     el: '.swiper-pagination',
@@ -14,3 +14,5 @@ const swiper = new Swiper('.swiper', {
     delay: 5000,
   },
 });
+
+
