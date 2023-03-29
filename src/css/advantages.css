@@ -16,6 +16,8 @@
     .section-advantages{
         padding-bottom: 50px;
         padding-top: 50px;
+        width: 1200px;
+        margin: 0 auto;
     }
 }
 
@@ -74,7 +76,7 @@
         transform: rotate(90deg);
         bottom:120px;
 
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .line-sc::after {
