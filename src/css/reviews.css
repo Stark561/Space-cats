@@ -4,10 +4,10 @@
 .reviews-title {
     margin-bottom: 74px;
     text-align: center;
-    
+
 }
 
-.reviews-item {
+.reviews-swiper-slide {
     text-align: center;
     display: flex;
     justify-content: center;
