@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.logo {
+.header-logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,7 +14,7 @@
   font-size: 18px;
   line-height: 1.22em;
   letter-spacing: -0.03em;
-  color: #111111;
+  color: var(--black);
   margin-right: 188px;
   padding-top: 24px;
   padding-bottom: 32px;
@@ -43,17 +43,17 @@
   margin-left: auto;
 }
 
-.social-link {
+.header-social-link {
   padding-top: 24px;
   padding-bottom: 32px;
 }
 
-.svg-chocolate {
-  fill: white;
-  stroke: #FD9222;
+.header-svg-chocolate {
+  fill: var(--white);
+  stroke: var(--orange);
 }
 
-.svg-social {
-  fill: white;
-  stroke: black;
+.header-svg-social {
+  fill: var(--white);
+  stroke: var(--black);
 }
