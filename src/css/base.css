@@ -85,6 +85,9 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
   }
+  .title-orange-color {
+    color: var(--orange);
+  }
 
   .container{
    max-width: 375px;
