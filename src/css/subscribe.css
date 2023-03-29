@@ -1,0 +1,104 @@
+.subscribe-section {
+    margin: 0 auto;
+    padding-bottom: 63px;
+    padding-top: 62px;
+    background-image: url(../img/img-subscribe/Subcribe-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1200px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .subscribe-section {
+        background-image: url(../img/img-subscribe/Subcribe-mob@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 376px) {
+  .subscribe-section {
+    padding-bottom: 72px;
+    padding-top: 72px;
+    background-image: url(../img/img-subscribe/Subcribe-tab.jpg)
+  }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .subscribe-section {
+          background-image: url(../img/img-subscribe/Subcribe-tab@2x.jpg);
+      }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .subscribe-section {
+    background-image: url(../img/img-subscribe/Subcribe-desk.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .subscribe-section {
+          background-image: url(../img/img-subscribe/Subcribe-desk@2x.jpg);
+      }
+  }
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-title {
+    color: var(--white);
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 24px;
+    width: 291px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-title {
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: -0.03em;
+  }
+}
+
+.subscribe-text {
+    color: var(--white);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 326px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-text {
+    max-width: 467px;
+  }
+}
+
+.subscribe-btn {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 14px;
+    line-height: calc(17/14);
+    padding: 12px 28px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-btn {
+    font-size: 18px;
+    padding: 14px 40px;
+    line-height: calc(18/22);
+  }
+}
