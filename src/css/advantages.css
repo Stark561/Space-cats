@@ -1,0 +1,141 @@
+.section-advantages{
+    padding-bottom: 36px;
+
+    color: #FFFFFF;
+    background-color: var(--deep-purple);
+}
+
+@media only screen and (min-width: 768px) {
+    .section-advantages{
+        padding-bottom: 85px;
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-advantages{
+        padding-bottom: 50px;
+        padding-top: 50px;
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.container-advantages{
+    padding-right: 47px;
+}
+
+@media only screen and (min-width: 768px){
+    .container-advantages{
+     padding-right: 60px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .container-advantages{
+     padding-right: 50px;
+     padding-left: 50px;
+    }
+}
+
+.advantages-list{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px)  {
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+
+@media only screen and (min-width: 768px)  {
+    .advantages-item {
+    width: calc((100% - 60px) / 2);
+    }
+  }
+
+  @media only screen and (min-width: 1200px)  {
+    .advantages-item {
+    width: 308px;
+    height: 244px;
+    position: relative;
+    }
+
+    .line::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 124px;
+        height: 0px;
+        left: 270px;
+        transform: rotate(90deg);
+        bottom:120px;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .line-sc::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 124px;
+        height: 0px;
+        left: 270px;
+        transform: rotate(90deg);
+        bottom:125px;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .advantages-list{
+        align-items: flex-start;
+        gap: 70px;
+    }
+  }
+
+
+
+.advantages-title{
+    margin-bottom: 18px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.advantages-text{
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.icon-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+}
+
+@media only screen and (min-width: 768px) {
+    .icon-box{
+        margin-top: 0;
+    }
+}
+
+.adv-icon{
+    fill: var(--orange);
+}
