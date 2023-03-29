@@ -1,5 +1,5 @@
 :root {
-  <<<<<<< HEAD --black: #111111;
+  --black: #111111;
   --deep-purple: #1e1823;
   --orange: #fd9222;
   --white: #fafafa;
@@ -89,7 +89,7 @@ a {
   flex-basis: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
 }
 
->>>>>>>main .card-set-item {
+main .card-set-item {
   flex-basis: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
 }
 
