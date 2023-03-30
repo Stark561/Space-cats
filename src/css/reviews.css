@@ -7,7 +7,7 @@
 
 }
 
-.reviews.swiper-slide {
+.reviews-swiper-slide {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     padding-top: 42px;
 
     position: relative;
-    border: none;
+    /* border: none; */
 }
 @media screen and (min-width: 768px){
     .reviews-item {
@@ -59,6 +59,7 @@
 }
 
 .review-button {
+    display: flex;
     font-size: 14px;
     line-height: calc(17 \ 14);
 
