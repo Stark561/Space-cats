@@ -3,14 +3,14 @@
   --deep-purple: #1e1823;
   --orange: #fd9222;
   --white: #fafafa;
-  --cloud-background: #E2E2E2;
-  --dark-background: #1E1823;
+  --cloud-background: #e2e2e2;
+  --dark-background: #1e1823;
   --main-font: Montserrat, sans-serif;
   --secondary-font: Roboto, sans-serif;
   --items: 1;
   --col-indent: 18px;
   --row-indent: 20px;
-  --hero-bg-btn-hover: #FCF1E0;
+  --hero-bg-btn-hover: #fcf1e0;
 }
 
 h1,
@@ -69,11 +69,15 @@ a {
 }
 
 .card-set-item {
-  flex-basis: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
+  flex-basis: calc(
+    (100% - var(--col-indent) * (var(--items) - 1)) / var(--items)
+  );
 }
 
 main .card-set-item {
-  flex-basis: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
+  flex-basis: calc(
+    (100% - var(--col-indent) * (var(--items) - 1)) / var(--items)
+  );
 }
 
 textarea {
@@ -91,7 +95,7 @@ button {
   font-weight: 600;
   font-style: normal;
   font-size: 18px;
-  line-height: calc(22/18);
+  line-height: calc(22 / 18);
 }
 
 img {
@@ -109,7 +113,7 @@ ol {
 
 body {
   font-size: 14px;
-  line-height: calc(18/14);
+  line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   font-family: var(--main-font);
   background-color: var(--cloud-background);
