@@ -143,6 +143,7 @@
   border-radius: 35px;
   border: 1px solid #fd9222;
   cursor: pointer;
+  white-space: nowrap;
 }
 .card .contents .btn.active {
   color: #ffffff;
