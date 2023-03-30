@@ -115,7 +115,28 @@
 
 /* modal */
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden>.modal-subscribe {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
 .modal-subscribe {
+  z-index: 999;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -124,6 +145,7 @@
   background-color: var(--cloud-background);
   max-width: 538px;
   width: 100%;
+  transition: transform 250ms linear;
 }
 
 .modal-subscribe.is-hidden {
@@ -133,10 +155,12 @@
 }
 
 .title-modal-sub {
-  font-weight: 600;
   font-size: 24px;
-  line-height: 28px;
+  line-height: calc(28/24);
   color: var(--black);
+  margin-bottom: 28px;
+  width: 298px;
+  margin-left: 40px;
 }
 
 .modal-img-sub {
@@ -145,14 +169,56 @@
 }
 
 .modal-btn-subscribe {
-
   position: absolute;
-  top: 31px;
-  right: 31px;
-  background-color: black;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
 
 }
 
 .modal-btn-close-subscribe {
   stroke: var(--white);
+}
+
+.input-plus-btn-sub {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.modal-input-subscribe {
+  padding-left: 24px;
+  margin-right: 8px;
+  width: 313px;
+  height: 52px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 30px;
+  outline: none;
+  transition: border 250ms linear;
+}
+
+.modal-input-subscribe:focus {
+  border: 1.5px solid var(--orange);
+}
+
+.modal-input-subscribe::placeholder {
+  font-size: 18px;
+  line-height: calc(22/18);
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-form-agreement-btn-subscribe {
+  padding: 15px 41px;
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  color: var(--white);
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.modal-form-agreement-btn-subscribe:hover,
+.modal-form-agreement-btn-subscribe:focus {
+  background-color: var(--white);
+  color: var(--orange);
 }
