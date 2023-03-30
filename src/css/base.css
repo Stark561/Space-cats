@@ -3,16 +3,15 @@
   --deep-purple: #1e1823;
   --orange: #fd9222;
   --white: #fafafa;
-  --cloud-backgraund: #e2e2e2;
+  --cloud-background: #e2e2e2;
   --dark-background: #1e1823;
   --main-font: Montserrat, sans-serif;
   --secondary-font: Roboto, sans-serif;
   --items: 1;
   --col-indent: 18px;
   --row-indent: 20px;
+  --hero-bg-btn-hover: #fcf1e0;
 }
-
-/* Добавить .visually-hidden */
 
 h1,
 h2,
@@ -34,7 +33,48 @@ a {
   row-gap: var(--row-indent);
   column-gap: var(--col-indent);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--row-indent);
+  column-gap: var(--col-indent);
+}
+
 .card-set-item {
+  flex-basis: calc(
+    (100% - var(--col-indent) * (var(--items) - 1)) / var(--items)
+  );
+}
+
+main .card-set-item {
   flex-basis: calc(
     (100% - var(--col-indent) * (var(--items) - 1)) / var(--items)
   );
@@ -76,7 +116,7 @@ body {
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   font-family: var(--main-font);
-  background-color: var(--cloud-backgraund);
+  background-color: var(--cloud-background);
   color: var(--black);
 }
 
@@ -84,6 +124,10 @@ body {
   font-weight: 600;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+
+.title-orange-color {
+  color: var(--orange);
 }
 
 .container {
@@ -116,13 +160,10 @@ body {
   .section {
     padding-bottom: 100px;
   }
-  .title-orange-color {
-    color: var(--orange);
-  }
+}
 
-  @media screen and (min-width: 1200px) {
-    .section {
-      padding-bottom: 128px;
-    }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 128px;
   }
 }
