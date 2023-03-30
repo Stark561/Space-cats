@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white);
+    max-width: 335px;
     margin: 0 auto;
     border-radius: 30px;
     margin-bottom: 50px;
