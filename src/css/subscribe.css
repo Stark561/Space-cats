@@ -94,6 +94,13 @@
     line-height: calc(17/14);
     padding: 12px 28px;
     margin: 0 auto;
+    transition: color 250ms linear, background-color 250ms linear;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--white);
+  color: var(--orange);
 }
 
 @media only screen and (min-width: 768px) {
@@ -105,8 +112,6 @@
 }
 
 /* Modal subscribe */
-
-
 
 .modal-subscribe {
   position: absolute;

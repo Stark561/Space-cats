@@ -89,6 +89,12 @@
 
 .footer-social-icon {
     stroke: var(--white);
+    transition: stroke 250ms linear;
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  stroke: var(--orange);
 }
 
 .line {
