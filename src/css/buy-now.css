@@ -60,7 +60,7 @@
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background: var(--зressed-ocean);
+  background: red;
   fill: #ffffff;
 }
 

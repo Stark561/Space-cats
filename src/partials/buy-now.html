@@ -1,8 +1,8 @@
 <div class="backdrop is-hidden" buy-now-modal>
   <div class="">
     <button class="modal-btn" buy-now-modal-close>
-      <svg width="8" height="8">
-        <use href="./images/icons.svg#icon-close"></use>
+      <svg width="12" height="12">
+        <use href="./images/icon.svg#max"></use>
       </svg>
     </button>
     <form class="modal-form">
@@ -217,8 +217,8 @@
          <div class="modal-group">
         <label class="modal-label" for="tel">Card number</label>
         <div class="input-wrapper">
-          <input class="modal-input" type="cardnumber" name="cardnumber" id="cardnumber" placeholder="Enter card"
-                       pattern="[0-9]{14,23}" required autofocus autocomplete="cc-number" 
+          <input class="modal-input" type="card" name="tel" id="card" placeholder="Enter card"
+                       pattern="[0-9]{14,23}" required autofocus autocomplete="cc-number" name="cardnumber"
           
           />
           <svg class="modal-icon" width="18" height="24">
@@ -233,7 +233,7 @@
             name="comment"
             id="comment"
             rows="5"
-            placeholder="Enter text"
+            placeholder="Text input"
           ></textarea>
       </div>
       <button class="sellers-button" type="button">Submit</button>
