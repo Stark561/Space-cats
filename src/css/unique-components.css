@@ -136,11 +136,9 @@
 .card .contents .btn {
   display: block;
   padding: 6px 16px;
-  /* height: 24px; */
   font-size: 10px;
   line-height: 1.2;
   color: #111111;
-
   background: transparent;
   border-radius: 35px;
   border: 1px solid #fd9222;
