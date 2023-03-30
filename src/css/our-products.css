@@ -5,7 +5,27 @@
 .title-orange-color {
   color: var(--orange);
 }
-.swiper-slide {
+.our-products-container {
+  max-width: 375px;
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .our-products-container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-products-container {
+    max-width: 1200px;
+    padding-right: 33px;
+  }
+}
+.our-products-swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +36,8 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
-
-@media screen and (min-width: 768px){
-  .swiper-slide {
+@media screen and (min-width: 768px) {
+  .our-products-swiper-slide {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 270px;
