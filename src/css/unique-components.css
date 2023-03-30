@@ -1,3 +1,6 @@
+.components-section {
+  padding-top: 72px;
+}
 .section-title {
   font-weight: 600;
   text-align: center;
@@ -193,6 +196,9 @@
   .list-components-item:nth-child(4) {
     order: 1;
   }
+  .components-section {
+    padding-top: 100px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .list-components-item {
@@ -219,5 +225,8 @@
   }
   .list-components-item:nth-child(4) {
     order: 3;
+  }
+  .components-section {
+    padding-top: 128px;
   }
 }
