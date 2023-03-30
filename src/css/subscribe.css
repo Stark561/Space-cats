@@ -110,8 +110,7 @@
     line-height: calc(18/22);
   }
 }
-
-/* Modal subscribe */
+/* modal */
 
 .modal-subscribe {
   position: absolute;
@@ -139,15 +138,17 @@
 
 .modal-img-sub {
   border-radius: 15px 15px 0 0;
+  margin-bottom: 40px;
 }
 
 .modal-btn-subscribe {
+
   position: absolute;
   top: 31px;
   right: 31px;
-  background-color: transparent;
+  background-color: black;
 
-} 
+}
 
 .modal-btn-close-subscribe {
   stroke: var(--white);

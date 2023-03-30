@@ -1,3 +1,3 @@
 import './js/swiper';
 
-import './modal-sub';
+import './js/modal-sub';
