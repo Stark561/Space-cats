@@ -1,103 +1,61 @@
-/* .section {
-}
-.our-products-section {
-}
-.container {
-}
-.our-products-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-.title {
-}
 .our-products-title {
+  margin-bottom: 32px;
   text-align: center;
 }
 .title-orange-color {
   color: var(--orange);
 }
-.swiper-container {
-  max-width: 375px;
-  height: 364px;
-}
-.swiper {
-}
-.list {
-}
-.our-products-list {
-  padding-bottom: 20px;
-}
-.swiper-wrapper {
-  display: flex;
-}
-.our-products-item {
-  max-width: 335px;
-  padding: 32px 52px;
-  background: #ffffff;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 15px;
-}
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.our-products-photo {
-  margin-left: auto;
-  margin-right: auto;
-}
-.our-products-desc {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: var(--white);
+  max-width: 335px;
+  padding: 32px 52px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px){
+  .swiper-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 270px;
+  }
 }
 .our-products-subtitle {
   margin-top: 8px;
   margin-bottom: 2px;
   font-weight: 600;
-  font-size: 18px;
   line-height: 1.33;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #111111;
 }
-.our-products-text {
-  margin-bottom: 18px;
+.our-products-desc {
+  font-family: var(--main-font);
   font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: -0.02em;
+  line-height: 1.18;
   color: rgba(17, 17, 17, 0.7);
 }
-
-.our-products-button {
+.our-products-span {
+  margin-top: 18px;
   padding: 8px 20px;
-  background: #fafafa;
+  background: var(--cloud-backgraund);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.21;
-  color: #111111;
 }
-
+.swiper-pagination {
+  position: static;
+  padding-top: 20px;
+}
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
 }
-
 .swiper-pagination-bullet-active {
-  background-color: #fd9222;
+  background-color: var(--orange);
   width: 28px;
-  height: 13px;
   border-radius: 7px;
-} */
-.swiper-container {
-    width: 375px;  
-    /* height: 400px */
-  }
-  
-  .swiper-slide {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;}
+}
