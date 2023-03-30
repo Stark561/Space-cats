@@ -78,3 +78,9 @@
   fill: var(--white);
   stroke: var(--black);
 }
+
+.header-svg-social:hover,
+.header-svg-social:focus {
+  fill: var(--white);
+  stroke: var(--orange);
+}
