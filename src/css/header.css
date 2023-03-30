@@ -6,23 +6,30 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 4px;
   font-style: italic;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 1.71em;
   letter-spacing: -0.03em;
   color: var(--black);
   padding-top: 20px;
   padding-bottom: 14px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width:769px) {
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.11em;
+  }
 }
 
 @media screen and (min-width:1200px) {
   .header-logo {
     margin-right: 188px;
-
     padding-top: 24px;
     padding-bottom: 32px;
     font-size: 18px;
@@ -40,16 +47,6 @@
   font-size: 14px;
   padding-top: 24px;
   padding-bottom: 32px;
-}
-
-@media screen and (max-width:1200px) {
-  .header-text {
-    display: none;
-  }
-
-  .header-social-link {
-    display: none;
-  }
 }
 
 .header-links {
@@ -78,4 +75,80 @@
 .header-svg-social {
   fill: var(--white);
   stroke: var(--black);
+}
+
+.header-svg-social:hover,
+.header-svg-social:focus {
+  fill: var(--white);
+  stroke: var(--orange);
+}
+
+.header-menu-burger {
+  stroke: var(--black);
+  height: 14px;
+  width: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 769px) {
+  .header-menu-burger {
+    display: none;
+  }
+}
+
+.header-menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  stroke: var(--black);
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 769px) {
+  .header-menu-toggle {
+    top: 24px;
+    right: 32px;
+    stroke: var(--black);
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-menu-toggle {
+    display: none;
+  }
+}
+
+.heder-container-burger {
+  justify-content: space-between;
+}
+
+.header-mb-burger {
+  position: relative;
 }
