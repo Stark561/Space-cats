@@ -7,22 +7,26 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   gap: 4px;
   font-style: italic;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22em;
+  font-size: 13px;
+  line-height: 1.71em;
   letter-spacing: -0.03em;
   color: var(--black);
-  margin-right: 188px;
-  padding-top: 24px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  margin: 0 auto;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:1200px) {
   .header-logo {
-    margin: 0;
+    margin-right: 188px;
+
+    padding-top: 24px;
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -30,13 +34,15 @@
   display: flex;
   align-items: center;
   color: inherit;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  text-align: center;
   font-size: 14px;
-  letter-spacing: -0.02em;
   padding-top: 24px;
   padding-bottom: 32px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
   .header-text {
     display: none;
   }
