@@ -118,7 +118,7 @@
   left: 50%;
   border-radius: 15px;
   transform: translate(-50%, -50%);
-  background-color: var(--cloud-backgraund);
+  background-color: var(--cloud-background);
   max-width: 538px;
   width: 100%;
 }
