@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 4px;
   font-style: italic;
   font-weight: 700;
@@ -68,8 +68,19 @@
 }
 
 .header-svg-chocolate {
+  width: 21px;
+  height: 21px;
   fill: var(--white);
   stroke: var(--orange);
+}
+
+@media screen and (min-width:1200px) {
+  .header-svg-chocolate {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
+    stroke: var(--orange);
+  }
 }
 
 .header-svg-social {
