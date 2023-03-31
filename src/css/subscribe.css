@@ -132,7 +132,7 @@
 }
 
 .backdrop.is-hidden>.modal-subscribe {
-  transform: translate(-50%, -50%) scale(0.6);
+  transform: translate(-50%, -50%) scale(0.4);
 }
 
 .modal-subscribe {
@@ -143,9 +143,15 @@
   border-radius: 15px;
   transform: translate(-50%, -50%);
   background-color: var(--cloud-background);
-  max-width: 538px;
+  max-width: 311px;
   width: 100%;
   transition: transform 250ms linear;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-subscribe {
+    max-width: 538px;
+  }
 }
 
 .modal-subscribe.is-hidden {
@@ -155,17 +161,33 @@
 }
 
 .title-modal-sub {
-  font-size: 24px;
-  line-height: calc(28/24);
+  font-size: 20px;
+  line-height: calc(24/20);
   color: var(--black);
-  margin-bottom: 28px;
-  width: 298px;
-  margin-left: 40px;
+  margin-bottom: 24px;
+  max-width: 263px;
+  margin-left: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-modal-sub {
+    margin-bottom: 28px;
+    margin-left: 40px;
+    max-width: 298px;
+    font-size: 24px;
+    line-height: calc(28/24);
+  }
 }
 
 .modal-img-sub {
   border-radius: 15px 15px 0 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-img-sub {
+    margin-bottom: 40px;
+  }
 }
 
 .modal-btn-subscribe {
@@ -182,20 +204,38 @@
 
 .input-plus-btn-sub {
   display: flex;
-  margin-left: 40px;
-  margin-bottom: 40px;
-  margin-right: 40px;
+  margin-left: 24px;
+  margin-bottom: 32px;
+  margin-right: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .input-plus-btn-sub {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
 }
 
 .modal-input-subscribe {
-  padding-left: 24px;
-  margin-right: 8px;
-  width: 313px;
-  height: 52px;
+  padding-right: 105px;
+  padding-left: 18px;
+  width: 263px;
+  height: 45px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 30px;
   outline: none;
   transition: border 250ms linear;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-input-subscribe {
+    padding-right: 10px;
+    width: 313px;
+    height: 52px;
+    padding-left: 24px;
+    margin-right: 8px;
+  }
 }
 
 .modal-input-subscribe:focus {
@@ -203,18 +243,41 @@
 }
 
 .modal-input-subscribe::placeholder {
-  font-size: 18px;
-  line-height: calc(22/18);
+  font-size: 14px;
+  line-height: calc(17/14);
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
 
+@media only screen and (min-width: 768px) {
+  .modal-input-subscribe::placeholder {
+    font-size: 18px;
+    line-height: calc(22/18);
+  }
+}
+
 .modal-form-agreement-btn-subscribe {
-  padding: 15px 41px;
+  position: absolute;
+  right: 24px;
+  padding: 13px 27px;
+  font-size: 14px;
+  line-height: calc(17/14);
+  text-align: center;
+  height: 45px;
+  width: 100px;
   border: 1px solid var(--orange);
   background-color: var(--orange);
   color: var(--white);
   transition: color 250ms linear, background-color 250ms linear;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-form-agreement-btn-subscribe {
+    position: static;
+    height: 52px;
+    padding: 15px 41px;
+    width: 137px;
+  }
 }
 
 .modal-form-agreement-btn-subscribe:hover,
