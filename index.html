@@ -19,8 +19,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
-  <script type="module" crossorigin src="/Space-cats/assets/index-7c5e1f87.js"></script>
-  <link rel="stylesheet" href="/Space-cats/assets/index-df2df2cb.css">
+  <script type="module" crossorigin src="/Space-cats/assets/index-ff05a3c3.js"></script>
+  <link rel="stylesheet" href="/Space-cats/assets/index-a83b2551.css">
 </head>
 
 <body>
@@ -965,7 +965,34 @@
   </div>
 </div>
 
-  
+  <div class="backdrop-review is-hidden" review-modal>
+    <div class="modal-review">
+        <button class="review-btn" review-modal-close>
+            <svg class="btn-icon" stroke="black" width="22" height="22">
+                <use href="/Space-cats/assets/icon-310b3de6.svg#close"></use>
+              </svg>
+        </button>
+        <div class="modal-form-review">
+            <h2 class="modal-title title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></h2>
+            <form class="form"> 
+                  <input class="input" type="text" name="username" placeholder="Name" required/>
+                  <input class="input" type="text" name="email" placeholder="Email" required />
+                   <input class="input phone" type="tel" name="phone_number" placeholder="Phone number" 
+                   required maxlength="9"/>
+                   <div class="review-tel line-rw"> 
+                     <svg class="phone-icon" width="32" height="24"> 
+                        <use href="/Space-cats/assets/icon-310b3de6.svg#ua"></use>
+                     </svg>
+                     <span class="cod-review">+380</span>
+                   </div>
+                 <textarea class="textarea" name="feedback" rows="5" placeholder="Enter text"
+                 required minlength="10"></textarea>
+               </form> 
+            <button class="btn-send" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
   <div class="backdrop-orange is-hidden" data-modal-orange>
   <div class="modal-orange">
     <button class="orange-btn" type="button" data-modal-orange-close>
@@ -1195,7 +1222,7 @@
             </ul>
             <div class="swiper-pagination"></div>
         </div>
-        <button type="button" class="review-button">Leave a review
+        <button type="button" class="review-button" review-modal-open>Leave a review
         </button>
     </div>
 </section>
