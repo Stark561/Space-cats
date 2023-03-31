@@ -89,12 +89,18 @@
 
 .footer-social-icon {
   stroke: var(--white);
-  transition: stroke 250ms linear;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-icon:hover,
-.footer-social-icon:focus {
+.footer-social-icon:hover {
   stroke: var(--orange);
+}
+.footer-social-link:focus>.footer-social-icon {
+  stroke: var(--orange);
+}
+
+.footer-social-link {
+  outline: none;
 }
 
 .line {
@@ -134,4 +140,8 @@
     display: flex;
     justify-content: space-between;
   }
+}
+/*! No scroll */
+.page.no-scroll {
+  overflow: hidden;
 }
