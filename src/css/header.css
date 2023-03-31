@@ -113,6 +113,12 @@
   stroke: var(--orange);
 }
 
+.header-hover {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-hover:hover,
 .header-hover:focus {
   color: var(--orange);
