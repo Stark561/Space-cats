@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-bottom: 63px;
   padding-top: 62px;
-  background-image: url(../images/subscribe/Subcribe-mob.jpg);
+  background-image: url(/images/subscribe/Subcribe-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,7 +15,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(./images/subscribe/Subcribe-mob@2x.jpg);
+    background-image: url(/images/subscribe/Subcribe-mob@2x.jpg);
   }
 }
 
@@ -23,7 +23,7 @@
   .subscribe-section {
     padding-bottom: 72px;
     padding-top: 72px;
-    background-image: url(./images/subscribe/Subcribe-tab.jpg)
+    background-image: url(/images/subscribe/Subcribe-tab.jpg)
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -31,14 +31,14 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .subscribe-section {
-      background-image: url(./images/subscribe/Subcribe-tab@2x.jpg);
+      background-image: url(/images/subscribe/Subcribe-tab@2x.jpg);
     }
   }
 }
 
 @media only screen and (min-width: 769px) {
   .subscribe-section {
-    background-image: url(./images/subscribe/Subcribe-desk.jpg);
+    background-image: url(/images/subscribe/Subcribe-desk.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -46,7 +46,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .subscribe-section {
-      background-image: url(./images/subscribe/Subcribe-desk@2x.jpg);
+      background-image: url(/images/subscribe/Subcribe-desk@2x.jpg);
     }
   }
 }
@@ -96,7 +96,7 @@
   line-height: calc(17/14);
   padding: 12px 28px;
   margin: 0 auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .subscribe-btn:hover,
@@ -122,7 +122,7 @@
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 100%;
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity var(--animation), visibility var(--animation);
 }
 
 .backdrop-sub.is-hidden {
@@ -145,7 +145,7 @@
   background-color: var(--cloud-background);
   max-width: 311px;
   width: 100%;
-  transition: transform 250ms linear;
+  transition: transform var(--animation);
 }
 
 @media only screen and (min-width: 768px) {
@@ -225,7 +225,7 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 30px;
   outline: none;
-  transition: border 250ms linear;
+  transition: border var(--animation);
 }
 
 @media only screen and (min-width: 768px) {
@@ -268,7 +268,7 @@
   border: 1px solid var(--orange);
   background-color: var(--orange);
   color: var(--white);
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: color var(--animation), background-color var(--animation);
 }
 
 @media only screen and (min-width: 768px) {
