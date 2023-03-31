@@ -75,12 +75,19 @@
 
 .footer-contact-title {
   font-weight: 500;
-  color: #FFFFFF;
+  color: var(--white);
   margin-bottom: 14px;
 }
 
 .footer-contact-link {
-  color: #FFFFFF;
+  color: var(--white);
+  transition: color var(--animation);
+  outline: none;
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--orange);
 }
 
 .footer-contact-link:nth-child(2) {
@@ -89,7 +96,7 @@
 
 .footer-social-icon {
   stroke: var(--white);
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke var(--animation);
 }
 
 .footer-social-icon:hover {
@@ -133,6 +140,13 @@
   font-weight: 500;
   line-height: calc(16/14);
   color: var(--white);
+  transition: color var(--animation);
+  outline: none;
+}
+
+.footer-move-link:hover,
+.footer-move-link:focus {
+  color: var(--orange);
 }
 
 @media only screen and (min-width: 768px) {
@@ -145,3 +159,5 @@
 .page.no-scroll {
   overflow: hidden;
 }
+
+
