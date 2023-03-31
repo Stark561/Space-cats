@@ -15,11 +15,12 @@
   padding-top: 14px;
 }
 
-.swiper.our-products-swiper.boy-naw-margen {
+.swiper.our-products-swiper.buy-now-margen {
   margin-bottom: 32px;
+  /* max-width: 311px; */
 }
 
-.moda-buy-now {
+.modal-buy-now {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,13 +63,13 @@
   stroke: var(--orange);
 }
 
-.our-products-item.boy-naw-our.our-products-swiper-slide {
+.our-products-item.buy-now-our.our-products-swiper-slide {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 28px;
 }
 
-.our-products-span.boy-naw-span {
+.our-products-span.buy-now-span {
   margin-top: 16px;
 }
 
@@ -81,11 +82,9 @@
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-
-  color: var(--light-silvr-color);
 }
 
-.boy-span {
+.buy-span {
   display: block;
 }
 
@@ -140,10 +139,10 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
 }
-.naw-card {
+.now-card {
   margin-left: 77%;
 }
-.modal-input.naw-tel {
+.modal-input.now-tel {
   padding-left: 80px;
 }
 
@@ -189,14 +188,28 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
+.buy-now-list {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
-  .moda-buy-now {
+  .buy-now-package {
+    margin-bottom: 40px;
+  }
+
+  .modal-buy-now {
     max-width: 609px;
     padding-left: 48px;
     padding-right: 48px;
   }
 
-  .buy-naw-box {
+  .modal-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .buy-now-box {
     display: flex;
   }
 
@@ -204,7 +217,7 @@
     height: 66px;
   }
 
-  .modal-input.h264 {
+  .modal-input.w264 {
     width: 246px;
   }
 
@@ -212,7 +225,7 @@
     margin-right: 21px;
   }
 
-  .naw-card {
+  .now-card {
     margin-left: 87%;
   }
 
@@ -223,4 +236,61 @@
   .buy-tel span {
     margin-left: 43px;
   }
+  .buy-now-margen .modal-comments::placeholder {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    letter-spacing: 0.04em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  .buy-now-margen {
+    display: none;
+  }
+
+  .buy-now-list {
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buy-now-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    width: 160px;
+    height: 196px;
+
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+    padding-top: 24px;
+  }
+
+  .buy-now-gram {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96px;
+    height: 33px;
+
+    padding: 8px 20px;
+    background: var(--cloud-backgraund);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    font-weight: 600;
+    line-height: 1.21;
+  }
+
+  /* .our-products-span.buy-now-span {
+    margin-top: 14px;
+  } */
 }
