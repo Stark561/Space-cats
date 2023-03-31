@@ -53,7 +53,11 @@
 
     background-color: transparent;
 
-    transition: background-color 400ms linear, stroke 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+.btn-icon{
+  transition: stroke 400ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -118,7 +122,7 @@
     width: 100%;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 13px;
-    padding: 14px 18px 14px;
+    padding: 14px 3px 14px 18px;
     outline: transparent;
 
     transition: border-color 400ms linear;
@@ -127,7 +131,7 @@
 @media screen and (min-width: 768px) {
   .input{
     height: 66px;
-    padding: 22px 24px 22px;
+    padding: 22px 5px 22px 24px;
   } 
   }
 
@@ -152,7 +156,7 @@
     height: 91px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 13px;
-    padding: 22px 24px 22px;
+    padding: 14px 3px 14px 18px;
     outline: transparent;
 
     transition: border-color 400ms linear;
@@ -161,6 +165,7 @@
 @media screen and (min-width: 768px) {
   .textarea {
     height: 137px;
+    padding: 22px 5px 22px 24px;
   } 
   }
 
@@ -207,6 +212,7 @@
 
 .btn-send{
     padding: 12px 28px;
+    width: 93px;
     background: #FD9222;
     border-color: transparent;
     border-radius: 100px;
@@ -222,6 +228,7 @@
   @media screen and (min-width: 768px) {
     .btn-send {
       padding: 14px 40px;
+      width: 117px;
     } 
     }
 
