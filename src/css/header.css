@@ -10,7 +10,7 @@
   gap: 4px;
   font-style: italic;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.71em;
   letter-spacing: -0.03em;
   color: var(--black);
@@ -37,34 +37,50 @@
   }
 }
 
-.header-text {
-  display: flex;
-  align-items: center;
-  color: inherit;
-  line-height: 1.85;
-  letter-spacing: 0.02em;
-  text-align: center;
-  font-size: 14px;
-  padding-top: 24px;
-  padding-bottom: 32px;
-}
-
 .header-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.header-socials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  margin-left: auto;
+  display: none;
 }
 
 .header-social-link {
-  padding-top: 24px;
-  padding-bottom: 32px;
+  display: none;
+}
+
+.header-text {
+  display: none;
+}
+
+
+@media screen and (min-width:1200px) {
+  .header-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .header-text {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .header-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-left: auto;
+  }
+
+  .header-social-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-svg-chocolate {
@@ -95,26 +111,6 @@
 }
 
 .header-menu-burger {
-  stroke: var(--black);
-  height: 14px;
-  width: 21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto 0;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
-@media (min-width: 769px) {
-  .header-menu-burger {
-    display: none;
-  }
-}
-
-.header-menu-toggle {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -129,10 +125,18 @@
   border: none;
   outline: none;
   background-color: transparent;
+  padding: 1px;
+}
+
+@media (min-width: 769px) {
+  .header-menu-burger {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) {
   .header-menu-toggle {
+    position: absolute;
     top: 24px;
     right: 32px;
     stroke: var(--black);
