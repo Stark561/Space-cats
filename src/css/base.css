@@ -11,6 +11,9 @@
   --col-indent: 18px;
   --row-indent: 20px;
   --hero-bg-btn-hover: #fcf1e0;
+  --clear-white: #FFFFFF;
+  --how-its-icon: #4C4C4C;
+  --how-border-icon: #ECEDED;
 }
 
 h1,
@@ -116,7 +119,7 @@ body {
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   font-family: var(--main-font);
-  background-color: var(--cloud-background);
+  background-color: var(--white);
   color: var(--black);
 }
 
