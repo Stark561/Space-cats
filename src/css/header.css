@@ -102,6 +102,9 @@
 .header-svg-social {
   fill: var(--white);
   stroke: var(--black);
+  transition-property: fill stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg-social:hover,
@@ -110,13 +113,19 @@
   stroke: var(--orange);
 }
 
+.header-hover:hover,
+.header-hover:focus {
+  color: var(--orange);
+  position: relative;
+}
+
 .header-menu-burger {
   position: absolute;
   top: 20px;
   right: 20px;
   stroke: var(--black);
-  height: 28px;
-  width: 28px;
+  height: 14px;
+  width: 21px;
   display: flex;
   align-items: center;
   justify-content: center;
