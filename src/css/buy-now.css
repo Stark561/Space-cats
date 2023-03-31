@@ -1,4 +1,4 @@
-.backdrop {
+.buy-now {
   z-index: 2;
   position: fixed;
   top: 0;
@@ -38,13 +38,13 @@
   padding-right: 24px;
 }
 
-.backdrop.is-hidden {
+.buy-now.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.modal-btn {
+.modal-btn-buy {
   stroke: rgba(17, 17, 17, 1);
   cursor: pointer;
   position: absolute;
@@ -58,8 +58,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn-buy:hover,
+.modal-btn-buy:focus {
   stroke: var(--orange);
 }
 
@@ -289,8 +289,4 @@
     font-weight: 600;
     line-height: 1.21;
   }
-
-  /* .our-products-span.buy-now-span {
-    margin-top: 14px;
-  } */
 }

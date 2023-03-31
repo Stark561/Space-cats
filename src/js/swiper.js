@@ -53,32 +53,3 @@ const ReviewsSwiper = new Swiper('.reviews-swiper', {
     delay: 5000,
   },
 });
-
-// const buyNowSwiper = new Swiper('buy - now - margen', {
-//   slidesPerView: 1,
-//   spaceBetween: 18,
-//   breakpoints: {
-//     311: {
-//       slidesPerView: 2.5,
-//     },
-//     767: {
-//       slidesPerView: 3,
-//     },
-//     1200: {
-//       slidesPerView: 4,
-//     },
-//   },
-
-//   loop: true,
-//   slidesToScroll: 1,
-//   speed: 2000,
-//   slideToClickedSlide: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     type: 'bullets',
-//     clickable: true,
-//   },
-//   autoplay: {
-//     delay: 5000,
-//   },
-// });
