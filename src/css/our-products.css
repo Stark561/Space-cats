@@ -67,8 +67,16 @@
 }
 .swiper-pagination {
   position: static;
-  padding-top: 20px;
+  padding-top: 14px;
 }
+@media screen and (min-width: 311px) {
+  .swiper-pagination {
+    padding-top: 20px;
+  }}
+@media screen and (min-width: 768px) {
+.swiper-pagination {
+  padding-top: 32px;
+}}
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
