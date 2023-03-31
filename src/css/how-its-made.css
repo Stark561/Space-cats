@@ -1,7 +1,14 @@
 .how-its-title{
+    display: flex;
+    justify-content: center;
+    color: var(--black);
     font-weight: 600;
-    font-size: 20px;
     line-height: calc(24 / 20);
+    margin-bottom: 32px;
+}
+
+.accent{
+    color: var(--orange);
 }
 
 @media screen and (min-width: 1200px) {
