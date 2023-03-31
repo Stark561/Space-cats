@@ -5,18 +5,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #e2e2e2;
+  background: rgba(226, 226, 226, 0.244);
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  border-radius: 15px;
-  max-width: 311px;
-  padding-top: 32px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
-.swiper-pagination.bay-pagination {
+.swiper-pagination.pt14 {
   padding-top: 14px;
 }
 
@@ -24,20 +19,20 @@
   margin-bottom: 32px;
 }
 
-.modal {
+.moda-buy-now {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 408px;
+  max-width: 311px;
   width: 100%;
-  background: #fcfcfc;
+  background: #fafafa;
   color: #000;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding-bottom: 24px;
-  padding-top: 72px;
+  border-radius: 15px;
+  padding-bottom: 32px;
+  padding-top: 32px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -192,4 +187,40 @@
   letter-spacing: 0.04em;
 
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .moda-buy-now {
+    max-width: 609px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .buy-naw-box {
+    display: flex;
+  }
+
+  .modal-input {
+    height: 66px;
+  }
+
+  .modal-input.h264 {
+    width: 246px;
+  }
+
+  .input-wrapper.mb-14 {
+    margin-right: 21px;
+  }
+
+  .naw-card {
+    margin-left: 87%;
+  }
+
+  .buy-tel {
+    top: 24px;
+  }
+
+  .buy-tel span {
+    margin-left: 43px;
+  }
 }
