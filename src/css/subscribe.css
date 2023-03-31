@@ -1,66 +1,69 @@
 .subscribe-section {
-    margin: 0 auto;
-    padding-bottom: 63px;
-    padding-top: 62px;
-    background-image: url(../images/subscribe/Subcribe-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 63px;
+  padding-top: 62px;
+  background-image: url(/images/subscribe/Subcribe-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1200px;
 }
 
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .subscribe-section {
-        background-image: url(../images/subscribe/Subcribe-mob@2x.jpg);
-    }
+  .subscribe-section {
+    background-image: url(/images/subscribe/Subcribe-mob@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 376px) {
   .subscribe-section {
     padding-bottom: 72px;
     padding-top: 72px;
-    background-image: url(../images/subscribe/Subcribe-tab.jpg)
+    background-image: url(/images/subscribe/Subcribe-tab.jpg)
   }
+
   @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-      .subscribe-section {
-          background-image: url(../images/subscribe/Subcribe-tab@2x.jpg);
-      }
+    .subscribe-section {
+      background-image: url(/images/subscribe/Subcribe-tab@2x.jpg);
+    }
   }
 }
 
 @media only screen and (min-width: 769px) {
   .subscribe-section {
-    background-image: url(../images/subscribe/Subcribe-desk.jpg);
+    background-image: url(/images/subscribe/Subcribe-desk.jpg);
   }
+
   @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-      .subscribe-section {
-          background-image: url(../images/subscribe/Subcribe-desk@2x.jpg);
-      }
+    .subscribe-section {
+      background-image: url(/images/subscribe/Subcribe-desk@2x.jpg);
+    }
   }
 }
 
 .subscribe-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-title {
-    color: var(--white);
-    text-align: center; 
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-    margin-bottom: 24px;
-    width: 291px;
+  color: var(--white);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  margin-bottom: 24px;
+  width: 291px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,12 +75,12 @@
 }
 
 .subscribe-text {
-    color: var(--white);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 326px;
-    margin-bottom: 24px;
+  color: var(--white);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 326px;
+  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,12 +90,19 @@
 }
 
 .subscribe-btn {
-    background-color: var(--orange);
-    color: var(--white);
-    font-size: 14px;
-    line-height: calc(17/14);
-    padding: 12px 28px;
-    margin: 0 auto;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 14px;
+  line-height: calc(17/14);
+  padding: 12px 28px;
+  margin: 0 auto;
+  transition: color var(--animation), background-color var(--animation);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--white);
+  color: var(--orange);
 }
 
 @media only screen and (min-width: 768px) {
@@ -102,3 +112,181 @@
     line-height: calc(18/22);
   }
 }
+
+/* modal */
+
+.backdrop-sub {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 100%;
+  transition: opacity var(--animation), visibility var(--animation);
+}
+
+.backdrop-sub.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop-sub.is-hidden>.modal-subscribe {
+  transform: translate(-50%, -50%) scale(0.4);
+}
+
+.modal-subscribe {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  background-color: var(--cloud-background);
+  max-width: 311px;
+  width: 100%;
+  transition: transform var(--animation);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-subscribe {
+    max-width: 538px;
+  }
+}
+
+.modal-subscribe.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.title-modal-sub {
+  font-size: 20px;
+  line-height: calc(24/20);
+  color: var(--black);
+  margin-bottom: 24px;
+  max-width: 263px;
+  margin-left: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-modal-sub {
+    margin-bottom: 28px;
+    margin-left: 40px;
+    max-width: 298px;
+    font-size: 24px;
+    line-height: calc(28/24);
+  }
+}
+
+.modal-img-sub {
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-img-sub {
+    margin-bottom: 40px;
+  }
+}
+
+.modal-btn-subscribe {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: transparent;
+
+}
+
+.modal-btn-close-subscribe {
+  stroke: var(--white);
+}
+
+.input-plus-btn-sub {
+  display: flex;
+  margin-left: 24px;
+  margin-bottom: 32px;
+  margin-right: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .input-plus-btn-sub {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+}
+
+.modal-input-subscribe {
+  padding-right: 105px;
+  padding-left: 18px;
+  width: 263px;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 30px;
+  outline: none;
+  transition: border var(--animation);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-input-subscribe {
+    padding-right: 10px;
+    width: 313px;
+    height: 52px;
+    padding-left: 24px;
+    margin-right: 8px;
+  }
+}
+
+.modal-input-subscribe:focus {
+  border: 1.5px solid var(--orange);
+}
+
+.modal-input-subscribe::placeholder {
+  font-size: 14px;
+  line-height: calc(17/14);
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-input-subscribe::placeholder {
+    font-size: 18px;
+    line-height: calc(22/18);
+  }
+}
+
+.modal-form-agreement-btn-subscribe {
+  position: absolute;
+  right: 24px;
+  padding: 13px 27px;
+  font-size: 14px;
+  line-height: calc(17/14);
+  text-align: center;
+  height: 45px;
+  width: 100px;
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  color: var(--white);
+  transition: color var(--animation), background-color var(--animation);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-form-agreement-btn-subscribe {
+    position: static;
+    height: 52px;
+    padding: 15px 41px;
+    width: 137px;
+  }
+}
+
+.modal-form-agreement-btn-subscribe:hover,
+.modal-form-agreement-btn-subscribe:focus {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.swiper {
+  z-index: 0;
+}
+
