@@ -1,0 +1,45 @@
+.how-its{
+    display: flex;
+}
+
+.how-its-video{
+    border-radius: 15px;
+}
+
+.made-background{
+    width: 516px;
+    margin-left: 20px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 34px;
+    background-color: var(#FFFFFF);
+}
+
+.title-how-its{
+    padding-bottom: 28px;
+}
+
+.how-its-made{
+    
+}
+
+.how-its-made-list{
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.how-its-made-list:last-child{
+    margin-bottom: 0;
+}
+
+.how-its-made-icon{
+    background: var(#4C4C4C);
+    border: 1px solid var(#ECEDED);
+}
+
+.how-its-made-text{
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: var(#111111);
+    padding-left: 8px;
+}
