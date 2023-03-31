@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 1200px) {
     .how-its-video{
-        width: 600px;
+        max-width: 600px;
         height: 400px;
     }
 }
@@ -41,28 +41,49 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    /* width: 516px;
-    margin-left: 20px;
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-bottom: 34px; */
     background-color: var(#FFFFFF);
 }
 
 @media screen and (min-width: 768px) {
     .made-background{
-        
+        width: 614px;
+        margin-left: 0;
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-bottom: 34px;
     }
 }
 
-.title-how-its{
-    padding-bottom: 28px;
+@media screen and (min-width: 1200px) {
+    .made-background{
+        margin-top: 0;
+        width: 516px;
+        margin-left: 20px;
+    }
 }
 
-.how-its-made{
+
+.title-how-its{
+    padding-bottom: 28px;
+    line-height: calc(24 / 18);
     
 }
 
+@media screen and (min-width: 768px) {
+    .title-how-its{
+        width: 400px;
+    }
+}
+
+.how-its-made{
+    max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+    .how-its-made{
+        max-width: 464px;
+    }
+}
 
 
 .how-its-made-list{
@@ -80,11 +101,21 @@
     border: 1px solid var(#ECEDED);
     width: 8px;
     height: 8px;
+    margin-right: 8px;
 }
 
 .how-its-made-text{
+    font-weight: 400;
     line-height: calc(18 / 14);
     letter-spacing: -0.02em;
-    color: var(#111111);
-    padding-left: 8px;
+    color: var(--black);
+    width: 310px;
 }
+
+@media screen and (min-width: 768px) {
+    .how-its-made-text{
+        width: 448px
+    }
+}
+
+
