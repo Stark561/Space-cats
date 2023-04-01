@@ -21,6 +21,7 @@
 }
 
 .modal-buy-now {
+  margin-top: 51%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -103,7 +104,6 @@
   display: flex;
   position: absolute;
   top: 14px;
-  border-right: 3px solid rgba(17, 17, 17, 0.05);
 }
 
 .buy-tel span {
@@ -136,22 +136,15 @@
   transition: border-color 250ms linear;
 
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  /* filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03)); */
   border-radius: 8px;
 }
 .now-card {
   margin-left: 77%;
 }
-.modal-input.now-tel {
-  padding-left: 80px;
-}
-
-.modal-input:focus + .modal-icon {
-  fill: var(--logo-color);
-}
 
 .modal-input:focus {
-  border-color: var(--logo-color);
+  border-color: var(--orange);
 }
 
 .input-wrapper {
@@ -159,7 +152,6 @@
 }
 
 .modal-icon {
-  fill: var(--primary-text-color);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -167,29 +159,46 @@
   transition: fill 250ms linear;
 }
 
-.modal-comments {
+.modal-comments-now {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 10px 20px;
 }
 
-.modal-comments:focus {
+.modal-comments-now:focus {
   outline: transparent;
-  border-color: var(--logo-color);
+  border: 1px solid var(--orange);
 }
 
-.modal-comments::placeholder {
+.modal-comments-now::placeholder {
+  font-family: 'Montserrat';
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: calc(17 / 14);
 
-  letter-spacing: 0.04em;
+  letter-spacing: -0.02em;
 
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(35, 34, 34, 0.742);
 }
 
 .buy-now-list {
   display: none;
+}
+
+.modal-input.now-tel {
+  padding-left: 88px;
+}
+
+.now-tel-rw::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 0px;
+  left: 72px;
+  transform: rotate(90deg);
+  bottom: 21px;
+  border: 1px solid rgba(64, 64, 64, 0.1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -234,15 +243,7 @@
   }
 
   .buy-tel span {
-    margin-left: 43px;
-  }
-  .buy-now-margen .modal-comments::placeholder {
-    font-size: 18px;
-    line-height: calc(22 / 18);
-
-    letter-spacing: 0.04em;
-
-    color: rgba(117, 117, 117, 0.5);
+    margin-left: 52px;
   }
 
   .buy-now-margen {
@@ -288,5 +289,26 @@
     font-weight: 600;
     line-height: 1.21;
   }
+
+  .modal-buy-now {
+    margin-top: 12%;
+  }
+
+  .modal-input.now-tel {
+    padding-left: 108px;
+  }
+
+  .now-tel-rw::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 0px;
+    left: 87px;
+    transform: rotate(90deg);
+    bottom: 33px;
+    border: 1px solid rgba(64, 64, 64, 0.1);
+  }
 }
-/* 291 */
+
+/* 294 */
