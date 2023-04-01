@@ -245,14 +245,6 @@
   .buy-tel span {
     margin-left: 52px;
   }
-  .modal-comments-now::placeholder {
-    font-size: 18px;
-    line-height: calc(22 / 18);
-
-    letter-spacing: 0.04em;
-
-    color: rgba(117, 117, 117, 0.5);
-  }
 
   .buy-now-margen {
     display: none;
