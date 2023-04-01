@@ -67,6 +67,7 @@
     font-size: 14px;
     padding-top: 24px;
     padding-bottom: 32px;
+    color: var(--black);
   }
 
   .header-socials {
@@ -194,14 +195,14 @@
 
 
 
-.menu-container {
+.header-menu-container {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  width: 58.8vw;
   height: 100vh;
   padding: 80px 40px 40px 40px;
-  background-color: var(--white-color);
+  background-color: var(--white);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -209,31 +210,18 @@
   flex-direction: column;
 }
 
-.menu-container.is-open {
+.header-menu-container.is-open {
   opacity: 1;
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.header-menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
 }
 
-.menu-burger {
-  height: 24px;
-  width: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto 0;
-  padding: 24px 0;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: var(--navy-blue-color);
-}
+
 
 @media (min-width: 768px) {
   .menu-burger {
