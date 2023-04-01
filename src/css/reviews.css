@@ -56,7 +56,7 @@
 
 .item-wrap {
     padding: 56px 18px 42px 18px;
-    background-color: var(--white);
+    background-color: var(--clear-white);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     height: 200px;
@@ -83,6 +83,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(18 \ 14);
+    color: rgba(17, 17, 17, 0.7); 
 }
 
 .review-button {
@@ -94,4 +95,13 @@
     padding: 12px 28px;
 
     border: 1px solid var(--orange);
+    background-color: var(--white);
+
+    transition: background-color var(--animation), color var(--animation);
+}
+
+.review-button:hover,
+.review-button:focus {
+    background-color: var(--orange);
+    color: var(--clear-white);
 }
