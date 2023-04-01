@@ -21,6 +21,7 @@
 }
 
 .modal-buy-now {
+  margin-top: 52%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -289,4 +290,5 @@
     line-height: 1.21;
   }
 }
-/* 291 */
+
+/* 294 */
