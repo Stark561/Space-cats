@@ -69,12 +69,12 @@
 
 .review-btn:hover,
 .review-btn:focus {
-  background-color:#FCF1E0;
+  background-color: var(--hero-bg-btn-hover);
 }
 
 .review-btn:hover .btn-icon,
 .review-btn:focus .btn-icon {
-  stroke: #FD9222;
+  stroke: var(--orange);
 }
 
 
@@ -99,7 +99,7 @@
 .modal-title{ 
     margin-bottom: 32px;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--black);
     font-size: 18px;
     line-height: 1.2;
 }
@@ -112,9 +112,15 @@
     line-height: 1.17;
   } 
   }
-    
+
+@media screen and (max-width: 560px) {
+    .modal-title{
+      font-size: 16px;
+      } 
+      }
+
 .modal-title span{
-    color: #FD9222;
+    color: var(--orange);
 }
 
 .input{
@@ -145,10 +151,15 @@
   } 
   }
 
+@media screen and (max-width: 560px) {
+  .input.phone{
+    padding: 14px 3px 14px 89px;
+    } 
+    }
 
 .input:hover,
 .input:focus{
- border-color: #FD9222;
+ border-color: var(--orange);
 }
 
 .textarea {
@@ -171,7 +182,7 @@
 
 .textarea:hover,
 .textarea:focus{
- border-color: #FD9222;
+ border-color: var(--orange);
 }
 
 .input::placeholder{
@@ -213,13 +224,13 @@
 .btn-send{
     padding: 12px 28px;
     width: 93px;
-    background: #FD9222;
+    background: var(--orange);
     border-color: transparent;
     border-radius: 100px;
     font-size: 14px;
     line-height: 1.2;
     
-    color: #FFFFFF;
+    color: var(--clear-white);
     
     margin-top: 18px;
     transition: background-color 400ms linear, color 400ms linear;
@@ -234,8 +245,8 @@
 
 .btn-send:hover,
 .btn-send:focus {
-  background-color: #FCF1E0;
-  color: #FD9222;
+  background-color: var(--hero-bg-btn-hover);
+  color: var(--hero-bg-btn-hover);
 }
 
 .review-tel{
@@ -249,6 +260,15 @@
   bottom: 24px;
   width: 24px;
 }
+
+@media screen and (max-width: 560px) {
+  .phone-icon{
+    left: 26px;
+    bottom: 26px;
+    width: 16px;
+  } 
+  }
+
 
 @media screen and (min-width: 768px) {
   .phone-icon{
@@ -268,6 +288,14 @@
   font-weight: 500;
   font-size: 14px;
 }
+
+@media screen and (max-width: 560px) {
+  .cod-review{
+    left: 54px;
+    bottom: 30px;
+    font-size: 11px;
+  } 
+  }
 
 @media screen and (min-width: 768px) {
   .cod-review{
@@ -301,3 +329,11 @@
     border: 2px solid rgba(64, 64, 64, 0.1);
   }
 }
+
+@media screen and (max-width: 560px) {
+  .line-rw::after{
+    width: 14px;
+    left: 72px;
+    bottom: 37px;
+  } 
+  }
