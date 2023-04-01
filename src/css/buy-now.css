@@ -17,7 +17,6 @@
 
 .swiper.our-products-swiper.buy-now-margen {
   margin-bottom: 32px;
-  /* max-width: 311px; */
 }
 
 .modal-buy-now {
@@ -250,7 +249,6 @@
   }
 
   .buy-now-list {
-    /* display: block; */
     display: flex;
     justify-content: space-between;
   }
@@ -290,3 +288,4 @@
     line-height: 1.21;
   }
 }
+/* 291 */
