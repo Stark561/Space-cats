@@ -1,54 +1,49 @@
-.backdrop {
+.buy-now {
   z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #e2e2e2;
+  background: rgba(226, 226, 226, 0.244);
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  border-radius: 15px;
+}
+
+.swiper-pagination.pt14 {
+  padding-top: 14px;
+}
+
+.swiper.our-products-swiper.buy-now-margen {
+  margin-bottom: 32px;
+}
+
+.modal-buy-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 311px;
+  width: 100%;
+  background: #fafafa;
+  color: #000;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding-bottom: 32px;
   padding-top: 32px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.swiper-pagination.bay-pagination {
-  padding-top: 14px;
-}
-
-.swiper.our-products-swiper.boy-naw-margen {
-  margin-bottom: 32px;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 408px;
-  width: 100%;
-  background: #fcfcfc;
-  color: #000;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding-bottom: 24px;
-  padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.backdrop.is-hidden {
+.buy-now.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.modal-btn {
+.modal-btn-buy {
   stroke: rgba(17, 17, 17, 1);
   cursor: pointer;
   position: absolute;
@@ -62,18 +57,18 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn-buy:hover,
+.modal-btn-buy:focus {
   stroke: var(--orange);
 }
 
-.our-products-item.boy-naw-our.our-products-swiper-slide {
+.our-products-item.buy-now-our.our-products-swiper-slide {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 28px;
 }
 
-.our-products-span.boy-naw-span {
+.our-products-span.buy-now-span {
   margin-top: 16px;
 }
 
@@ -86,11 +81,9 @@
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-
-  color: var(--light-silvr-color);
 }
 
-.boy-span {
+.buy-span {
   display: block;
 }
 
@@ -145,10 +138,10 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
 }
-.naw-card {
+.now-card {
   margin-left: 77%;
 }
-.modal-input.naw-tel {
+.modal-input.now-tel {
   padding-left: 80px;
 }
 
@@ -193,3 +186,106 @@
 
   color: rgba(117, 117, 117, 0.5);
 }
+
+.buy-now-list {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .buy-now-package {
+    margin-bottom: 40px;
+  }
+
+  .modal-buy-now {
+    max-width: 609px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .modal-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .buy-now-box {
+    display: flex;
+  }
+
+  .modal-input {
+    height: 66px;
+  }
+
+  .modal-input.w264 {
+    width: 246px;
+  }
+
+  .input-wrapper.mb-14 {
+    margin-right: 21px;
+  }
+
+  .now-card {
+    margin-left: 87%;
+  }
+
+  .buy-tel {
+    top: 24px;
+  }
+
+  .buy-tel span {
+    margin-left: 43px;
+  }
+  .buy-now-margen .modal-comments::placeholder {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    letter-spacing: 0.04em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  .buy-now-margen {
+    display: none;
+  }
+
+  .buy-now-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buy-now-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    width: 160px;
+    height: 196px;
+
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+    padding-top: 24px;
+  }
+
+  .buy-now-gram {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96px;
+    height: 33px;
+
+    padding: 8px 20px;
+    background: var(--cloud-backgraund);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    font-weight: 600;
+    line-height: 1.21;
+  }
+}
+/* 291 */
