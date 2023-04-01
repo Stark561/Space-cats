@@ -90,11 +90,12 @@
   color: var(--orange);
 }
 
-.footer-contact-link:nth-child(2) {
+.footer-contact-item {
   margin-bottom: 4px;
 }
 
 .footer-social-icon {
+  fill: transparent;
   stroke: var(--white);
   transition: stroke var(--animation);
 }
