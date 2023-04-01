@@ -103,7 +103,7 @@
 .header-svg-social {
   fill: var(--white);
   stroke: var(--black);
-  transition-property: fill stroke;
+  transition-property: fill, stroke;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -275,8 +275,14 @@
   margin: 0;
 }
 
-.mobile-item .burger-link:hover,
-.mobile-item .burger-link:focus {
+.burger-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-link:hover,
+.burger-link:focus {
   color: var(--orange);
 }
 
@@ -308,6 +314,10 @@
 .inst-mb {
   fill: transparent;
   stroke: var(--white);
+  transition-property: fill, stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .inst-mb:hover,
@@ -315,8 +325,3 @@
   fill: transparent;
   stroke: var(--orange);
 }
-
-/* .mb-soc-header {
-  margin-top: 240px;
-  margin-bottom: 20px;
-} */
