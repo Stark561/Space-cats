@@ -15,8 +15,8 @@
   --how-its-icon: #4C4C4C;
   --how-border-icon: #ECEDED;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --product-desc: rgba(17, 17, 17, 0.7);
-  --price-span: rgba(17, 17, 17, 0.1);
+  --desc-light-grey: rgba(17, 17, 17, 0.7);
+  --border-light-grey: rgba(17, 17, 17, 0.1);
 }
 
 h1,
