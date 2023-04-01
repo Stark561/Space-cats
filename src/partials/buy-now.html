@@ -208,6 +208,7 @@
               placeholder="Name"
               required
               minlength="2"
+              maxlength="15"
             />
           </div>
           <div class="input-wrapper">
@@ -219,6 +220,7 @@
               placeholder="Surname"
               required
               minlength="3"
+              maxlength="15"
             />
           </div>
         </div>
@@ -237,12 +239,14 @@
       </div>
       <div class="modal-group mt18">
         <label class="modal-label" for="tel">Phone number</label>
-        <div class="input-wrapper now-tel">
+        <div class="input-wrapper now-tel now-tel-rw">
           <input
             class="modal-input now-tel"
             type="tel"
             name="tel"
             id="tel"
+            required
+            maxlength="9"
             placeholder="Phone number"
           />
           <div class="buy-tel">
@@ -261,6 +265,7 @@
             type="text"
             name="card"
             id="card"
+            mixlength="15"
             placeholder="Enter card"
           />
           <svg class="now-card modal-icon" width="32" height="21">
@@ -271,14 +276,14 @@
       <div class="modal-group mt18">
         <label class="modal-label" for="comment">Comment</label>
         <textarea
-          class="modal-comments"
+          class="modal-comments-now"
           name="comment"
           id="comment"
           rows="5"
           placeholder="Text input"
         ></textarea>
       </div>
-      <button class="sellers-button mt18" type="button" modal-name>
+      <button class="sellers-button mt18" type="button" review-modal-open>
         Submit
       </button>
     </form>
