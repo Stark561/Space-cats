@@ -27,8 +27,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/Space-cats/assets/index-4ed1c4e7.js"></script>
-    <link rel="stylesheet" href="/Space-cats/assets/index-3668ccde.css">
+    <script type="module" crossorigin src="/Space-cats/assets/index-b1b1cf6d.js"></script>
+    <link rel="stylesheet" href="/Space-cats/assets/index-e74cc9f9.css">
   </head>
 
   <body class="page" data-body>
@@ -48,15 +48,16 @@
           </svg>
         </a>
         <ul class="header-navigation header-links header-container-row">
-          <li><a href="./index.html" class="header-text header-hover">Home</a></li>
+          <li><a href="./index.html" class="header-text header-hover">Home</a>
+          </li>
           <li><a href="#how-its-made-anchor" class="header-text header-hover">How it&#96;s made?</a></li>
           <li><a href="#our-products-anchor" class="header-text header-hover">Our products</a></li>
           <li><a href="#top-sellers-anchor" class="header-text header-hover">Top sellers</a></li>
           <li><a href="#reviews-anchor" class="header-text header-hover">Chocolate is loved</a></li>
         </ul>
       </nav>
-      <button class="header-menu-burger header-menu-toggle js-open-menu" aria-expanded="false"
-        aria-controls="mobile-menu">
+      <button class="header-menu-burger header-menu-toggle js-header-open-menu" aria-expanded="false"
+        aria-controls="header-mobile-menu">
         <svg width="28" height="28">
           <use href="/Space-cats/assets/icon-310b3de6.svg#burger"></use>
         </svg>
@@ -64,14 +65,16 @@
 
       <ul class="header-socials">
         <li class="header-social-item header-container-row">
-          <a href="https://www.instagram.com/explore/tags/chocolatechipcookies/" class="header-social-link">
+          <a href="https://www.instagram.com/explore/tags/chocolatechipcookies/" target="_blank"
+            rel="noopener noreferrer" class="header-social-link">
             <svg class="header-svg-social" aria-label="icon instagram" width="24" height="24">
               <use href="/Space-cats/assets/icon-310b3de6.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="header-social-item">
-          <a href="https://twitter.com/Lindt/status/826105211773140996/photo/1" class="header-social-link">
+          <a href="https://twitter.com/Lindt/status/826105211773140996/photo/1" target="_blank"
+            rel="noopener noreferrer" class="header-social-link">
             <svg class="header-svg-social" aria-label="icon twitter" width="24" height="24">
               <use href="/Space-cats/assets/icon-310b3de6.svg#twitter"></use>
             </svg>
@@ -83,55 +86,39 @@
 
   <!-- js close modal -->
 
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu mobile-close">
-      <svg class="mobile-svg" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="8"
-        height="8">
-        <path fill-rule="evenodd"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd"></path>
+  <div class="header-menu-container js-header-menu-container" id="header-mobile-menu">
+    <button class="menu-toggle js-header-close-menu burger-mobile-close">
+      <svg class="burger-close" width="28" height="28">
+        <use href="/Space-cats/assets/icon-310b3de6.svg#close"></use>
       </svg>
     </button>
 
     <ul class="mobile-menu">
-      <li class="mobile-item "><a href="" class="active-modal-mb">Studio</a></li>
-      <li class="mobile-item"><a href="" class="link">Portfolio</a></li>
-      <li class="mobile-item"><a href="" class="link">Contacts</a></li>
+      <li class="mobile-item "><a href="./index.html" class="burger-link">Home</a></li>
+      <li class="mobile-item"><a href="#how-its-made-anchor" class="burger-link">How it&#96;s made?</a></li>
+      <li class="mobile-item"><a href="#our-products-anchor" class="burger-link">Our products</a></li>
+      <li class="mobile-item"><a href="#top-sellers-anchor" class="burger-link">Top sellers</a></li>
+      <li class="mobile-item"><a href="#reviews-anchor" class="burger-link">Chocolate is loved</a></li>
     </ul>
-    <div>
-      <ul class="mobile-contacts">
-        <li><a href="tel:+110001111111" class="mobile-number">+11 (000) 111-11-11</a></li>
-        <li><a href="mailto:info@devstudio.com" class="mobile-link">info@devstudio.com</a></li>
-      </ul>
-      <ul class="mobile-socials">
-        <li><a href="_block" class="socials-link-footer">
-            <svg class="svg-footer" width="24" height="24">
-              <use href="./images/icons/sprite.svg#icon-instagram"></use>
+    <div class="mb-soc-header">
+      <ul class="mobile-socials-header">
+        <li class=""><a href="https://www.instagram.com/explore/tags/chocolatechipcookies/" target="_blank"
+            rel="noopener noreferrer" class="mb-social-icon">
+            <svg class="inst-mb" aria-label="icon instagram" width="22" height="22">
+              <use href="/Space-cats/assets/icon-310b3de6.svg#instagram"></use>
             </svg>
           </a>
         </li>
-        <li><a href="_block" class="socials-link-footer">
-            <svg class="svg-footer" width="24" height="24">
-              <use href="./images/icons/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li><a href="_block" class="socials-link-footer">
-            <svg class="svg-footer" width="24" height="24">
-              <use href="./images/icons/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a> </li>
-        <li><a href="_block" class="socials-link-footer">
-            <svg class="svg-footer" width="24" height="24">
-              <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+        <li class="mobile-item"><a href="https://twitter.com/Lindt/status/826105211773140996/photo/1" target="_blank"
+            rel="noopener noreferrer" class="mb-social-icon">
+            <svg class="inst-mb" aria-label="icon twitter" width="22" height="22">
+              <use href="/Space-cats/assets/icon-310b3de6.svg#twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
     </div>
   </div>
-
-  <script src="./js/mobile-menu.js"></script>
 </header>
     <main>
       <section class="hero-image hero-container section">
@@ -140,8 +127,9 @@
     <p class="hero-title">Treat yourself or a loved one <br> to our finest ingredients for a<br>moment of pure
       delight!</p>
     <div class="hero-button">
-      <a href="#"><button type="button" class="hero-button-buy" data-modal-open>Buy now</button></a>
-      <a href="#"><button type="button" class="hero-button-now" data-modal-open>How it&#96;s made</button></a>
+      <button type="button" class="hero-button-buy" buy-now-header-modal-open>Buy now</button>
+      <a href="#how-its-made-anchor"> <button type="button" class="hero-button-now" data-modal-open>How it&#96;s
+          made</button></a>
     </div>
     <!-- <button type="button"><a href="">scroll down <svg class="hero-scroll-svg" width="28" height="28">
                     <use href="></use>
