@@ -1,3 +1,4 @@
+import './js/mobile-menu';
 import './js/swiper';
 import './js/modal-sub';
 import './js/leave-a-review';
