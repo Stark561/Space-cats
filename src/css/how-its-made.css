@@ -19,6 +19,8 @@
 }
 
 .how-its-video{
+    display: block;
+    margin: 0 auto;
     border-radius: 15px;
     width: 335px;
     height: 500px;
@@ -40,7 +42,10 @@
 }
 
 .made-background{
-    margin-top: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 20px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--clear-white);
@@ -50,7 +55,6 @@
 @media screen and (min-width: 768px) {
     .made-background{
         width: 614px;
-        margin-left: 0;
         padding-top: 32px;
         padding-left: 32px;
         padding-bottom: 34px;
@@ -67,6 +71,7 @@
 
 
 .title-how-its{
+    font-size: 18px;
     margin-bottom: 28px;
     line-height: calc(24 / 18);
     
@@ -102,8 +107,6 @@
 
 .how-its-made-icon{
     display: block;
-    /* background: var(--how-its-icon);
-    border: 1px solid var(--how-border-icon); */
     width: 8px;
     height: 8px;
     margin-right: 8px;
