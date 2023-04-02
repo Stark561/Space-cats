@@ -18,7 +18,7 @@
   padding-bottom: 14px;
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .header-logo {
     padding-top: 24px;
     padding-bottom: 32px;
@@ -49,7 +49,6 @@
   display: none;
 }
 
-
 @media screen and (min-width:1200px) {
   .header-links {
     display: flex;
@@ -58,6 +57,7 @@
   }
 
   .header-text {
+    position: relative;
     display: flex;
     align-items: center;
     color: inherit;
@@ -68,6 +68,23 @@
     padding-top: 24px;
     padding-bottom: 32px;
     color: var(--black);
+  }
+
+  .header-text:after {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--orange);
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+
+  .header-text:hover:after,
+  .header-text:focus:after {
+    width: 50%;
   }
 
   .header-socials {
@@ -144,13 +161,13 @@
   padding: 1px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .header-menu-burger {
     display: none;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .header-menu-toggle {
     position: absolute;
     top: 24px;
@@ -203,7 +220,7 @@
   padding-left: 50px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .header-menu-container {
     max-width: 40vw;
   }
@@ -226,7 +243,7 @@
   stroke: var(--white);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .burger-close {
     width: 32px;
     height: 32px;
