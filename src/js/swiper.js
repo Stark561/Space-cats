@@ -1,4 +1,4 @@
-const OurProductsSwiper = new Swiper('.our-products-swiper', {
+const ourProductsSwiper = new Swiper('.our-products-swiper', {
   slidesPerView: 1,
   spaceBetween: 18,
   breakpoints: {
@@ -27,7 +27,7 @@ const OurProductsSwiper = new Swiper('.our-products-swiper', {
   },
 });
 
-const ReviewsSwiper = new Swiper('.reviews-swiper', {
+const reviewsSwiper = new Swiper('.reviews-swiper', {
   slidesPerView: 1,
   spaceBetween: 16,
   breakpoints: {
