@@ -1,6 +1,6 @@
-<div class="buy-now is-hidden" buy-now-modal>
+<div class="buy-now is-hidden" data-now-modal>
   <div class="modal-buy-now">
-    <button class="modal-btn-buy" buy-now-modal-close>
+    <button class="modal-btn-buy" data-now-modal-close>
       <svg width="14" height="14">
         <use href="./images/icon.svg#close"></use>
       </svg>
@@ -265,7 +265,7 @@
             type="text"
             name="card"
             id="card"
-            mixlength="15"
+            maxlength="15"
             placeholder="Enter card"
           />
           <svg class="now-card modal-icon" width="32" height="21">
@@ -283,9 +283,7 @@
           placeholder="Text input"
         ></textarea>
       </div>
-      <button class="sellers-button mt18" type="button" review-modal-open>
-        Submit
-      </button>
+      <button class="sellers-button mt18" type="button">Submit</button>
     </form>
   </div>
 </div>
