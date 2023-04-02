@@ -27,7 +27,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/Space-cats/assets/index-836c488c.js"></script>
+    <script type="module" crossorigin src="/Space-cats/assets/index-886f11c4.js"></script>
     <link rel="stylesheet" href="/Space-cats/assets/index-ebf20082.css">
   </head>
 
@@ -124,18 +124,24 @@
       <section class="hero-image hero-container section">
   <div class="container hero-div">
     <h1 class="visually-hidden">Hero</h1>
-    <p class="hero-title">Treat yourself or a loved one <br> to our finest ingredients for a<br>moment of pure
-      delight!</p>
+    <p class="hero-title">
+      Treat yourself or a loved one <br />
+      to our finest ingredients for a<br />moment of pure delight!
+    </p>
     <div class="hero-button">
-      <button type="button" class="hero-button-buy" buy-now-header-modal-open>Buy now</button>
-      <a href="#how-its-made-anchor" class="hero-button-now">How it&#96;s
-        made</a>
+      <button type="button" class="hero-button-buy" buy-now-header-modal-open>
+        Buy now
+      </button>
+      <a href="#how-its-made-anchor" class="hero-button-now"
+        >How it&#96;s made</a
+      >
     </div>
     <!-- <button type="button"><a href="">scroll down <svg class="hero-scroll-svg" width="28" height="28">
                     <use href="></use>
                 </svg> </a></button> -->
   </div>
 </section>
+
       <section class="section-advantages section">
     <div class="container-advantages container">
         <h2 class="visually-hidden">Our advantages</h2>
@@ -1060,6 +1066,7 @@
               name="name"
               id="name"
               placeholder="Name"
+              pattern="[A-Za-zА-Яа-яЁё\s]+"
               required
               minlength="2"
               maxlength="15"
@@ -1072,8 +1079,9 @@
               name="surname"
               id="surname"
               placeholder="Surname"
+              pattern="[A-Za-zА-Яа-яЁё\s]+"
               required
-              minlength="3"
+              minlength="2"
               maxlength="15"
             />
           </div>
@@ -1087,6 +1095,7 @@
             type="email"
             id="email"
             name="email"
+            required
             placeholder="Enter your email"
           />
         </div>
@@ -1097,10 +1106,9 @@
           <input
             class="modal-input now-tel"
             type="tel"
-            name="tel"
+            name="phone"
             id="tel"
             required
-            maxlength="9"
             placeholder="Phone number"
           />
           <div class="buy-tel">
@@ -1116,10 +1124,11 @@
         <div class="input-wrapper">
           <input
             class="modal-input"
-            type="text"
+            type="number"
             name="card"
             id="card"
-            maxlength="15"
+            required
+            max="16"
             placeholder="Enter card"
           />
           <svg class="now-card modal-icon" width="32" height="21">
@@ -1134,11 +1143,11 @@
           name="comment"
           id="comment"
           rows="5"
-          placeholder="Text input"
+          placeholder="Enter text"
         ></textarea>
       </div>
 
-      <button class="sellers-button mt18" type="button" data-modal-orange-open>
+      <button class="sellers-button mt18" type="submit" data-modal-orange-open>
         Submit
       </button>
     </form>
