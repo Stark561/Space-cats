@@ -186,6 +186,8 @@
 
 @media only screen and (min-width: 768px) {
   .modal-img-sub {
+    width: 538px;
+    height: 196px;
     margin-bottom: 40px;
   }
 }
