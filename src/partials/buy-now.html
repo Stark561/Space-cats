@@ -206,6 +206,7 @@
               name="name"
               id="name"
               placeholder="Name"
+              pattern="[A-Za-zА-Яа-яЁё\s]+"
               required
               minlength="2"
               maxlength="15"
@@ -218,8 +219,9 @@
               name="surname"
               id="surname"
               placeholder="Surname"
+              pattern="[A-Za-zА-Яа-яЁё\s]+"
               required
-              minlength="3"
+              minlength="2"
               maxlength="15"
             />
           </div>
@@ -233,6 +235,7 @@
             type="email"
             id="email"
             name="email"
+            required
             placeholder="Enter your email"
           />
         </div>
@@ -243,10 +246,9 @@
           <input
             class="modal-input now-tel"
             type="tel"
-            name="tel"
+            name="phone"
             id="tel"
             required
-            maxlength="9"
             placeholder="Phone number"
           />
           <div class="buy-tel">
@@ -262,10 +264,11 @@
         <div class="input-wrapper">
           <input
             class="modal-input"
-            type="text"
+            type="number"
             name="card"
             id="card"
-            maxlength="15"
+            required
+            max="16"
             placeholder="Enter card"
           />
           <svg class="now-card modal-icon" width="32" height="21">
@@ -280,11 +283,11 @@
           name="comment"
           id="comment"
           rows="5"
-          placeholder="Text input"
+          placeholder="Enter text"
         ></textarea>
       </div>
 
-      <button class="sellers-button mt18" type="button" data-modal-orange-open>
+      <button class="sellers-button mt18" type="submit" data-modal-orange-open>
         Submit
       </button>
     </form>
