@@ -68,7 +68,7 @@ body {
   background-color: var(--white);
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1199.5px) {
   .sellers-list .sellers-item.last {
     display: none;
   }
