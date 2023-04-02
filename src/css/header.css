@@ -64,6 +64,7 @@
     line-height: 1.85;
     letter-spacing: 0.02em;
     text-align: center;
+    font-weight: 500;
     font-size: 14px;
     padding-top: 24px;
     padding-bottom: 32px;
@@ -274,6 +275,22 @@
   color: var(--white);
   font-size: 11px;
   line-height: 1.14em;
+}
+
+.burger-link:after {
+  display: block;
+  position: absolute;
+  left: 50px;
+  width: 0;
+  height: 2px;
+  background-color: var(--orange);
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+.burger-link:hover:after,
+.burger-link:focus:after {
+  width: 25px;
 }
 
 @media screen and (max-width: 1200px) {

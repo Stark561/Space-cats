@@ -79,18 +79,28 @@
     margin-right: 0;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     .hero-title {
         flex-wrap: wrap;
         width: 484px;
         font-size: 28px;
         line-height: 34px;
         letter-spacing: 0.02em;
-        line-height: 1.67;
         text-align: left;
         letter-spacing: 0.02em;
-        margin-bottom: 12px;
-        font-weight: 600;
+        margin-bottom: 32px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-title {
+        flex-wrap: wrap;
+        width: 484px;
+        font-size: 28px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -100,7 +110,7 @@
     font-family: inherit;
     text-decoration: none;
     font-size: 12px;
-
+    width: 120px;
     border-radius: 100px;
     color: var(--white);
     background-color: var(--orange);
@@ -109,11 +119,10 @@
     font-weight: 600;
     font-style: normal;
     padding: 12px 28px;
-    margin-right: 14px;
+    margin: 0;
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -122,7 +131,6 @@
         width: 144px;
     }
 }
-
 
 .hero-button-buy:hover,
 .hero-button-buy:focus {
@@ -154,6 +162,12 @@
         font-size: 14px;
         width: 183px;
         margin-left: -45px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-button-now {
+        margin-left: 14px;
     }
 }
 
@@ -225,6 +239,9 @@
     font-size: 12px;
     line-height: 1.29;
     letter-spacing: -.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scroll:hover,
@@ -241,6 +258,9 @@
     fill: var(--orange);
     background-color: var(--white);
     border-radius: 50%;
+    transition-property: color, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scroll:hover .hero-scroll-svg,
