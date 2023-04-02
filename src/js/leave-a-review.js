@@ -1,7 +1,7 @@
 const refs = {
-    openModalBtn: document.querySelector('[review-modal-open]'),
-    closeModalBtn: document.querySelector('[review-modal-close]'),
-    modal: document.querySelector('[review-modal]'),
+    openModalBtn: document.querySelector('[data-modal-review-open]'),
+    closeModalBtn: document.querySelector('[data-modal-review-close]'),
+    modal: document.querySelector('[data-modal-review]'),
     body: document.querySelector('[data-body]'),
   };
 
@@ -9,7 +9,7 @@ const refs = {
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal(e) {
-    e.preventDefault()
+    e.preventDefault();
     refs.modal.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
