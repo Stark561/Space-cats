@@ -10,6 +10,8 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    visibility 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .swiper-pagination.pt14 {
@@ -54,9 +56,6 @@
   display: flex;
   padding: 8px;
   background-color: transparent;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-buy:hover,
