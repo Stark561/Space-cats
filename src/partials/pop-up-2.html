@@ -1,4 +1,4 @@
-<!-- <div class="backdrop-orange" data-modal-second-orange>
+<div class="backdrop-orange is-hidden" data-modal-second-orange>
   <div class="modal-orange">
     <button class="orange-btn" type="button" data-modal-orange-second-close>
       <svg class="svg-modal-orange">
@@ -14,31 +14,58 @@
     <picture>
       <source
         srcset="
-          ../images/pop-up/choco_mob@1x.webp 1x,
-          ../images/pop-up/choco_mob@2x.webp 2x,
-          ../images/pop-up/choco_mob@1x.avif 1x,
-          ../images/pop-up/choco_mob@2x.avif 2x,
-          ../images/pop-up/choco_mob@1x.png  1x,
-          ../images/pop-up/choco_mob@2x.png  2x
+          ./images/pop-up/choco_desc-tab@1x.avif 1x,
+          ./images/pop-up/choco_desc-tab@2x.avif 2x
         "
-        media="(max-width: 767px)"
+        media="(min-width: 768px)"
+        type="image/avif"
       />
       <source
         srcset="
-          ../images/pop-up/choco_desc-tab@1x.webp 1x,
-          ../images/pop-up/choco_desc-tab@2x.webp 2x,
-          ../images/pop-up/choco_desc-tab@1x.avif 1x,
-          ../images/pop-up/choco_desc-tab@2x.avif 2x,
-          ../images/pop-up/choco_desc-tab@1x.png  1x,
-          ../images/pop-up/choco_desc-tab@2x.png  2x
+          ./images/pop-up/choco_desc-tab@1x.webp 1x,
+          ./images/pop-up/choco_desc-tab@2x.webp 2x
         "
         media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/pop-up/choco_desc-tab@1x.png 1x,
+          ./images/pop-up/choco_desc-tab@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/pop-up/choco_mob@1x.avif 1x,
+          ./images/pop-up/choco_mob@2x.avif 2x
+        "
+        media="(max-width: 767px)"
+        type="image/avif"
+      />
+      <source
+        srcset="
+          ./images/pop-up/choco_mob@1x.webp 1x,
+          ./images/pop-up/choco_mob@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/pop-up/choco_mob@1x.png 1x,
+          ./images/pop-up/choco_mob@2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
       />
       <img
         class="modal-orange-img"
-        src="../images/pop-up/choco_mob@1x.png"
-        alt=""
+        src="./images/pop-up/choco_mob@1x.png"
+        alt="chocolate"
+        loading="lazy"
       />
     </picture>
   </div>
-</div> -->
+</div>
