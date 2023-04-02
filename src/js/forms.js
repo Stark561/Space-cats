@@ -7,7 +7,19 @@ forms.forEach(form => {
     modals.forEach(modal => {
       if (event.target.name.includes(modal.dataset.modal)) {
         modal.classList.toggle('is-hidden');
+        if (event.target.name === 'order_form') {
+          document
+            .querySelector('[data-modal="thanks"]')
+            .classList.toggle('is-hidden');
+        }
+        if (event.target.name === 'review_form') {
+          document
+            .querySelector('[data-modal="feedback"]')
+            .classList.toggle('is-hidden');
+        }
       }
     });
+
+    event.currentTarget.reset();
   });
 });
