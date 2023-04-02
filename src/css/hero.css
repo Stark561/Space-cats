@@ -245,7 +245,7 @@
 
 .hero-scroll:hover,
 .hero-scroll:focus {
-  color: orange;
+  color: var(--orange);
 }
 
 .hero-scroll-svg {
