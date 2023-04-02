@@ -19,8 +19,8 @@
 }
 
 .text-focus-in {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes text-focus-in {
@@ -178,16 +178,13 @@
 }
 
 .header-menu-burger {
-  position: absolute;
-  top: 24px;
-  right: 20px;
   stroke: var(--black);
-  height: 14px;
-  width: 21px;
+  height: 28px;
+  width: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto 0;
+  margin: auto 0 auto auto;
   cursor: pointer;
   border: none;
   outline: none;
@@ -195,33 +192,20 @@
   padding: 1px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header-menu-burger {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .header-menu-toggle {
-    position: absolute;
-    top: 24px;
-    right: 32px;
-    stroke: var(--black);
     height: 32px;
     width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 0;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: transparent;
   }
 }
-
-@media (min-width: 1200px) {
-  .header-menu-toggle {
+@media only screen and (min-width: 768px) {
+  .svg-header-burger {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header-menu-burger {
     display: none;
   }
 }
@@ -233,7 +217,6 @@
 .header-mb-burger {
   position: relative;
 }
-
 /* js open modal */
 
 .header-menu-container {
