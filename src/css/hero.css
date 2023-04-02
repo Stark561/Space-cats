@@ -109,6 +109,10 @@
     font-style: normal;
     padding: 12px 28px;
     margin-right: 14px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .hero-button-buy:hover,
@@ -130,6 +134,10 @@
     cursor: pointer;
     font-size: 13px;
     padding: 12px 28px;
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .hero-button-now:focus,
@@ -141,7 +149,6 @@
 
 .hero-button {
     display: flex;
-    justify-content: row;
 }
 
 @media only screen and (min-width: 769px) {

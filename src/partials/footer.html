@@ -8,7 +8,7 @@
       <div class="footer-contacts">
         <ul class="footer-contact-list">
           <li class="footer-contact-title">Contact us</li>
-          <li>
+          <li class="footer-contact-item">
             <a class="footer-contact-link" href="tel:+380684439426"
               >+380 (68)443-94-26</a
             >
@@ -24,7 +24,7 @@
             <a
               class="footer-social-link"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
               href="https://instagram.com/choc.affair?igshid=YmMyMTA2M2Y="
               ><svg
                 aria-label="Link for instagram"
@@ -40,7 +40,7 @@
             <a
               class="footer-social-link"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
               href="https://mobile.twitter.com/chocaffairuk"
               ><svg
                 aria-label="Link for twitter"
@@ -79,15 +79,22 @@
     </ul>
   </div>
 </footer>
-<!-- <script>
-  var $page = $('html, body');
-  $('a[href*="#"]').click(function () {
-    $page.animate(
-      {
-        scrollTop: $($.attr(this, 'href')).offset().top,
-      },
-      400
-    );
-    return false;
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('a').on('click', function (event) {
+      if (this.hash !== '') {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      }
+    });
   });
-</script> -->
+</script>
