@@ -12,15 +12,14 @@ forms.forEach(form => {
             .querySelector('[data-modal="thanks"]')
             .classList.toggle('is-hidden');
         }
-        if (
-          event.target.name === 'review_form' ||
-          event.target.name === 'subscribe_form'
-        ) {
+        if (event.target.name === 'review_form') {
           document
             .querySelector('[data-modal="feedback"]')
             .classList.toggle('is-hidden');
         }
       }
     });
+
+    event.currentTarget.reset();
   });
 });
