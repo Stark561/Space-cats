@@ -6,16 +6,19 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
-  transform: scale(1);
-  transition: scale 400ms ease-in-out, opacity 400ms ease-in-out;
+
+  transition: all 400ms ease-in-out;
 }
 .backdrop-orange.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: scale(0.7);
+}
+.modal-orange.is-hidden {
+  transform: scale(0.6);
 }
 .modal-orange {
+  transform: scale(1);
   width: 311px;
   height: 350px;
   background-color: var(--orange);
@@ -109,5 +112,6 @@
   }
   .modal-orange-wrapper {
     font-size: 24px;
+    line-height: 1;
   }
 }
