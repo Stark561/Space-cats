@@ -2,7 +2,6 @@ const refs = {
   modals: [...document.querySelectorAll('[data-modal]')],
   openBtns: document.querySelectorAll('[data-modal-open]'),
   closeBtns: document.querySelectorAll('[data-modal-close]'),
-  form: document.querySelector('[name="order-form"]'),
 };
 
 refs.openBtns.forEach(openBtn =>
