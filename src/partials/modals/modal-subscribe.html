@@ -9,38 +9,58 @@
     <picture class="modal-sub-photo">
       <source
         srcset="
-          ./images/pop-up/explore_mob@1x.avif       311w,
-          ./images/pop-up/explore_mob@2x.avif       622w,
-          ./images/pop-up/explore_tab-desc@1x.avif  538w,
-          ./images/pop-up/explore_tab-desc@2x.avif 1076w
+          ./images/pop-up/explore_tab-desc@1x.avif 1x,
+          ./images/pop-up/explore_tab-desc@2x.avif 2x
         "
         type="image/avif"
+        media="(min-width:768px)"
       />
-
       <source
         srcset="
-          ./images/pop-up/explore_mob@1x.webp       311w,
-          ./images/pop-up/explore_mob@2x.webp       622w,
-          ./images/pop-up/explore_tab-desc@1x.webp  538w,
-          ./images/pop-up/explore_tab-desc@2x.webp 1076w
+          ./images/pop-up/explore_tab-desc@1x.webp 1x,
+          ./images/pop-up/explore_tab-desc@2x.webp 2x
         "
         type="image/webp"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/pop-up/explore_tab-desc@1x.jpg 1x,
+          ./images/pop-up/explore_tab-desc@2x.jpg 2x
+        "
+        type="image/jpg"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/pop-up/explore_mob@1x.avif 1x,
+          ./images/pop-up/explore_mob@2x.avif 2x
+        "
+        type="image/avif"
+        media="(max-width:767px)"
       />
 
       <source
         srcset="
-          ./images/pop-up/explore_mob@1x.jpg       311w,
-          ./images/pop-up/explore_mob@2x.jpg       622w,
-          ./images/pop-up/explore_tab-desc@1x.jpg  538w,
-          ./images/pop-up/explore_tab-desc@2x.jpg 1076w
+          ./images/pop-up/explore_mob@1x.webp 1x,
+          ./images/pop-up/explore_mob@2x.webp 2x
+        "
+        type="image/webp"
+        media="(max-width:767px)"
+      />
+
+      <source
+        srcset="
+          ./images/pop-up/explore_mob@1x.jpg 1x,
+          ./images/pop-up/explore_mob@2x.jpg 2x
         "
         type="image/jpg"
+        media="(max-width:767px)"
       />
 
       <img
         class="modal-img-sub"
         src="./images/pop-up/explore_mob@1x.jpg"
-        sizes="(min-width: 768px) 538px"
         loading="lazy"
         alt="Chocolate"
         width="311"
