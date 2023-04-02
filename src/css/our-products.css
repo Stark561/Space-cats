@@ -41,7 +41,7 @@
   background-color: var(--clear-white);
   max-width: 335px;
   padding: 32px 52px;
-  border: 1px solid var(--price-span);
+  border: 1px solid var(--border-light-grey);
   border-radius: 15px;
 }
 @media screen and (min-width: 768px) {
@@ -60,16 +60,15 @@
   text-transform: uppercase;
 }
 .our-products-desc {
-  font-family: var(--main-font);
   font-size: 12px;
   line-height: 1.18;
-  color: var(--product-desc);
+  color: var(--desc-light-grey);
 }
 .our-products-span {
   margin-top: 18px;
   padding: 7px 20px;
   background: var(--white);
-  border: 1px solid var(--price-span);
+  border: inherit;
   border-radius: 100px;
   font-weight: 600;
   line-height: 1.21;
