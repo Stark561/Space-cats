@@ -19,20 +19,47 @@
           <use href="./images/icon.svg#close"></use>
         </svg>
       </button>
-      <img
-        height="196"
-        class="modal-img-sub"
-        loading="lazy"
-        srcset="
-          ./images/subscribe/modal-sub-desk.jpg    538w,
-          ./images/subscribe/modal-sub-desk@2x.jpg 1076w,
-          ./images/subscribe/modal-sub-tel.jpg     311w,
-          ./images/subscribe/modal-sub-tel@2x.jpg  622wx
-        "
-        sizes="(min-width: 768px) 538px "
-        src="./images/subscribe/modal-sub-desk.jpg"
-        alt="Chocolate"
-      />
+      <picture class="modal-sub-photo">
+        <source
+          srcset="
+            ./images/pop-up/explore_mob@1x.avif       311w,
+            ./images/pop-up/explore_mob@2x.avif       622w,
+            ./images/pop-up/explore_tab-desc@1x.avif  538w,
+            ./images/pop-up/explore_tab-desc@2x.avif 1076w
+          "
+          type="image/avif"
+        />
+
+        <source
+          srcset="
+            ./images/pop-up/explore_mob@1x.webp       311w,
+            ./images/pop-up/explore_mob@2x.webp       622w,
+            ./images/pop-up/explore_tab-desc@1x.webp  538w,
+            ./images/pop-up/explore_tab-desc@2x.webp 1076w
+          "
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            ./images/pop-up/explore_mob@1x.jpg       311w,
+            ./images/pop-up/explore_mob@2x.jpg       622w,
+            ./images/pop-up/explore_tab-desc@1x.jpg  538w,
+            ./images/pop-up/explore_tab-desc@2x.jpg 1076w
+          "
+          type="image/jpg"
+        />
+
+        <img
+          class="modal-img-sub"
+          src="./images/pop-up/explore_mob@1x.jpg"
+          sizes="(min-width: 768px) 538px"
+          loading="lazy"
+          alt="Chocolate"
+          width="311"
+          height="169"
+        />
+      </picture>
       <form class="modal-form-subscribe" name="contact_form_sub">
         <h3 class="title title-modal-sub">
           Explore our <br /><span class="title-orange">new chocolate</span>
@@ -45,6 +72,7 @@
             name="email_sub"
             id="email-sub"
             placeholder="Enter your email"
+            required
           />
           <button class="modal-form-agreement-btn-subscribe" type="submit">
             Submit
