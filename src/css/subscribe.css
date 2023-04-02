@@ -3,51 +3,36 @@
   margin: 0 auto;
   padding-bottom: 63px;
   padding-top: 62px;
-  background-image: url(/images/subscribe/Subcribe-mob.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(/images/subscribe/subcribe_tab@1x.jpg);
+  background-image: -webkit-image-set(
+    url('/images/subscribe/subcribe_tab@1x.avif') 1x,
+    url('/images/subscribe/subcribe_tab@2x.avif') 2x,
+    url('/images/subscribe/subcribe_tab@1x.webp') 1x,
+    url('/images/subscribe/subcribe_tab@2x.webp') 2x,
+    url('/images/subscribe/subcribe_tab@1x.jpg') 1x,
+    url('/images/subscribe/subcribe_tab@2x.jpg') 2x
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1200px;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 769px) {
   .subscribe-section {
-    background-image: url(/images/subscribe/Subcribe-mob@2x.jpg);
-  }
-}
-
-@media only screen and (min-width: 376px) {
-  .subscribe-section {
-    padding-bottom: 72px;
-    padding-top: 72px;
-    background-image: url(/images/subscribe/Subcribe-tab.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .subscribe-section {
-      background-image: url(/images/subscribe/Subcribe-tab@2x.jpg);
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .subscribe-section {
-    background-image: url(/images/subscribe/Subcribe-desk.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .subscribe-section {
-      background-image: url(/images/subscribe/Subcribe-desk@2x.jpg);
-    }
+    background-image: -webkit-image-set(
+      url('/images/subscribe/subcribe_desk@1x.avif') 1x,
+      url('/images/subscribe/subcribe_desk@2x.avif') 2x,
+      url('/images/subscribe/subcribe_desk@1x.webp') 1x,
+      url('/images/subscribe/subcribe_desk@2x.webp') 2x,
+      url('/images/subscribe/subcribe_desk@1x.jpg') 1x,
+      url('/images/subscribe/subcribe_desk@2x.jpg') 2x
+    );
   }
 }
 
