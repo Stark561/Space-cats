@@ -9,7 +9,7 @@ const refs = {
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal(e) {
-    e.preventDefault();
+    e.preventDefault()
     refs.modal.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
