@@ -18,7 +18,7 @@
   padding-bottom: 14px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .header-logo {
     padding-top: 24px;
     padding-bottom: 32px;
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .header-logo {
     margin-right: 188px;
     padding-top: 24px;
@@ -49,7 +49,7 @@
   display: none;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .header-links {
     display: flex;
     flex-wrap: wrap;
@@ -109,7 +109,7 @@
   stroke: var(--orange);
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .header-svg-chocolate {
     width: 24px;
     height: 24px;
@@ -351,7 +351,6 @@
   transition-property: fill, stroke;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .inst-mb:hover,
