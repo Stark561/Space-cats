@@ -1499,24 +1499,41 @@
     <!-- Прописати правильні шляхи до файлів зображень папка images/pop-up -->
     <picture class="modal-sub-photo">
       <source
-        srcset="/Space-cats/assets/explore_mob@1x-d9fb1854.avif 311w, /Space-cats/assets/explore_mob@2x-585d296e.avif 622w, /Space-cats/assets/explore_tab-desc@1x-870545bf.avif 538w, /Space-cats/assets/explore_tab-desc@2x-4923f230.avif 1076w"
+        srcset="/Space-cats/assets/explore_tab-desc@1x-870545bf.avif 1x, /Space-cats/assets/explore_tab-desc@2x-4923f230.avif 2x"
         type="image/avif"
+        media="(min-width:768px)"
       />
-
       <source
-        srcset="/Space-cats/assets/explore_mob@1x-999b040e.webp 311w, /Space-cats/assets/explore_mob@2x-db80f44c.webp 622w, /Space-cats/assets/explore_tab-desc@1x-2f4f4f0b.webp 538w, /Space-cats/assets/explore_tab-desc@2x-06dd8581.webp 1076w"
+        srcset="/Space-cats/assets/explore_tab-desc@1x-2f4f4f0b.webp 1x, /Space-cats/assets/explore_tab-desc@2x-06dd8581.webp 2x"
         type="image/webp"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/Space-cats/assets/explore_tab-desc@1x-ebe18b88.jpg 1x, /Space-cats/assets/explore_tab-desc@2x-1509a1fb.jpg 2x"
+        type="image/jpg"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/Space-cats/assets/explore_mob@1x-d9fb1854.avif 1x, /Space-cats/assets/explore_mob@2x-585d296e.avif 2x"
+        type="image/avif"
+        media="(max-width:767px)"
       />
 
       <source
-        srcset="/Space-cats/assets/explore_mob@1x-fddd3502.jpg 311w, /Space-cats/assets/explore_mob@2x-465382d0.jpg 622w, /Space-cats/assets/explore_tab-desc@1x-ebe18b88.jpg 538w, /Space-cats/assets/explore_tab-desc@2x-1509a1fb.jpg 1076w"
+        srcset="/Space-cats/assets/explore_mob@1x-999b040e.webp 1x, /Space-cats/assets/explore_mob@2x-db80f44c.webp 2x"
+        type="image/webp"
+        media="(max-width:767px)"
+      />
+
+      <source
+        srcset="/Space-cats/assets/explore_mob@1x-fddd3502.jpg 1x, /Space-cats/assets/explore_mob@2x-465382d0.jpg 2x"
         type="image/jpg"
+        media="(max-width:767px)"
       />
 
       <img
         class="modal-img-sub"
         src="/Space-cats/assets/explore_mob@1x-fddd3502.jpg"
-        sizes="(min-width: 768px) 538px"
         loading="lazy"
         alt="Chocolate"
         width="311"
