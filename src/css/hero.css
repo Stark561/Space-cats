@@ -38,7 +38,10 @@
 
 @media only screen and (min-width: 768px) {
     .hero-image {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url("/images/hero/hero_tab@1x.jpg");
+        background-image: linear-gradient(180deg,
+                rgba(17, 17, 17, 0) 0%,
+                rgba(17, 17, 17, 0.4) 100%),
+            url('/images/hero/hero_tab@1x.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -166,7 +169,6 @@
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -205,7 +207,7 @@
 @media only screen and (min-width: 1200px) {
     .hero-button {
         display: grid;
-        grid-template-columns: min-content min-content auto
+        grid-template-columns: min-content min-content auto;
     }
 }
 
@@ -250,7 +252,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.29;
-    letter-spacing: -.03em;
+    letter-spacing: -0.03em;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
