@@ -28,7 +28,7 @@
     />
     
     <script type="module" crossorigin src="/Space-cats/assets/index-886f11c4.js"></script>
-    <link rel="stylesheet" href="/Space-cats/assets/index-ebf20082.css">
+    <link rel="stylesheet" href="/Space-cats/assets/index-6e7280f9.css">
   </head>
 
   <body class="page" data-body>
@@ -1426,15 +1426,32 @@
           <use href="/Space-cats/assets/icon-310b3de6.svg#close"></use>
         </svg>
       </button>
-      <img
-        height="196"
-        class="modal-img-sub"
-        loading="lazy"
-        srcset="/Space-cats/assets/modal-sub-desk-67c6a343.jpg 538w, /Space-cats/assets/modal-sub-desk@2x-0a963422.jpg 1076w, /Space-cats/assets/modal-sub-tel-3cfcb2c5.jpg 311w, /Space-cats/assets/modal-sub-tel@2x-6ffb8ad6.jpg 622wx"
-        sizes="(min-width: 768px) 538px "
-        src="/Space-cats/assets/modal-sub-desk-67c6a343.jpg"
-        alt="Chocolate"
-      />
+      <picture class="modal-sub-photo">
+        <source
+          srcset="/Space-cats/assets/explore_mob@1x-d9fb1854.avif 311w, /Space-cats/assets/explore_mob@2x-585d296e.avif 622w, /Space-cats/assets/explore_tab-desc@1x-870545bf.avif 538w, /Space-cats/assets/explore_tab-desc@2x-4923f230.avif 1076w"
+          type="image/avif"
+        />
+
+        <source
+          srcset="/Space-cats/assets/explore_mob@1x-999b040e.webp 311w, /Space-cats/assets/explore_mob@2x-db80f44c.webp 622w, /Space-cats/assets/explore_tab-desc@1x-2f4f4f0b.webp 538w, /Space-cats/assets/explore_tab-desc@2x-06dd8581.webp 1076w"
+          type="image/webp"
+        />
+
+        <source
+          srcset="/Space-cats/assets/explore_mob@1x-fddd3502.jpg 311w, /Space-cats/assets/explore_mob@2x-465382d0.jpg 622w, /Space-cats/assets/explore_tab-desc@1x-ebe18b88.jpg 538w, /Space-cats/assets/explore_tab-desc@2x-1509a1fb.jpg 1076w"
+          type="image/jpg"
+        />
+
+        <img
+          class="modal-img-sub"
+          src="/Space-cats/assets/explore_mob@1x-fddd3502.jpg"
+          sizes="(min-width: 768px) 538px"
+          loading="lazy"
+          alt="Chocolate"
+          width="311"
+          height="169"
+        />
+      </picture>
       <form class="modal-form-subscribe" name="contact_form_sub">
         <h3 class="title title-modal-sub">
           Explore our <br /><span class="title-orange">new chocolate</span>
@@ -1447,6 +1464,7 @@
             name="email_sub"
             id="email-sub"
             placeholder="Enter your email"
+            required
           />
           <button class="modal-form-agreement-btn-subscribe" type="submit">
             Submit
